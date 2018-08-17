@@ -6,7 +6,10 @@
   </head>
   <body>
     <header class="main-header">
-      <p><a class="main-logo">Device</a></p>
+      <p>
+        <a class="main-logo" aria-label="Device">
+          <img src="img/logo.png" width="164" height="36" alt="Device">
+        </a>
       <!-- все элементы с классом class="visually-hidden" будут не видны на странице(спрятаны средствами CSS)-->
       <h1 class="visually-hidden">Device</h1>
       <!-- Здесь будет форма-->
@@ -31,7 +34,7 @@
       <section class="gallery">
         <figure class="galery-content">
           <h2 class="visually-hidden">Фото товара</h2>
-          <a href="#"><img src="img/selfie-stick.jpg" width="200" height="100" alt="Селфи-палка"></a>
+          <a href="#"><img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка"></a>
         </figure>
       </section>
       <section class="features">
@@ -61,7 +64,7 @@
         <ul>
           <li class="catalog-item">
             <p class="catalog-item-images">
-              <a href="catalog-item.html"><img src="img/product-1.jpg" width="200" height="100" alt="Виртуальная реальность"></a>
+              <a href="catalog-item.html"><img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность"></a>
             </p>
             <h3>
               <a href="catalog-item.html">Виртуальная реальность</a>
@@ -69,7 +72,7 @@
           </li>
           <li class="catalog-item">
             <p class="catalog-item-images">
-              <a href="catalog-item.html"><img src="img/product-2.jpg" width="200" height="100" alt="Моноподы для селфи"></a>
+              <a href="catalog-item.html"><img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи"></a>
             </p>
             <h3>
               <a href="catalog-item.html">Моноподы для селфи</a>
@@ -77,7 +80,7 @@
           </li>
           <li class="catalog-item">
             <p class="catalog-item-images">
-              <a href="catalog-item.html"><img src="img/product-3.jpg" width="200" height="100" alt="Экшн-камеры"></a>
+              <a href="catalog-item.html"><img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры"></a>
             </p>
             <h3>
               <a href="catalog-item.html">Экшн-камеры</a>
@@ -85,7 +88,7 @@
           </li>
           <li class="catalog-item">
             <p class="catalog-item-images">
-              <a href="catalog-item.html"><img src="img/product-4.jpg" width="200" height="100" alt="Фитнес-браслеты"></a>
+              <a href="catalog-item.html"><img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты"></a>
             </p>
             <h3>
               <a href="catalog-item.html">Фитнес-браслеты</a>
@@ -93,7 +96,7 @@
           </li>
           <li class="catalog-item">
             <p class="catalog-item-images">
-              <a href="catalog-item.html"><img src="img/product-5.jpg" width="200" height="100" alt="Умные часы"></a>
+              <a href="catalog-item.html"><img src="img/popular-5.svg" width="56" height="98" alt="Умные часы"></a>
             </p>
             <h3>
               <a href="catalog-item.html">Умные часы</a>
@@ -101,7 +104,7 @@
           </li>
           <li class="catalog-item">
             <p class="catalog-item-images">
-              <a href="catalog-item.html"><img src="img/product-6.jpg" width="200" height="100" alt="Квадрокоптеры"></a>
+              <a href="catalog-item.html"><img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры"></a>
             </p>
             <h3>
               <a href="catalog-item.html">Квадрокоптеры</a>
@@ -124,6 +127,18 @@
             Мы с удовольствием доставим ваш товар прямо к вашему
             подъезду совершенно бесплатно! Ведь мы неплохо
             заработаем, поднимая его на ваш этаж.
+        </p>
+      </section>
+      <section class="service-garanty">
+        <h2>Гарантия</h2>
+        <p>
+          Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.
+        </p>
+      </section>
+      <section class="service-kredit">
+        <h2>Кредит</h2>
+        <p>
+          Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
         </p>
       </section>
       <!-- здесь форма заканчивается -->
@@ -151,13 +166,16 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
         <a href="map.html" class="visually-hidden">Как проехать</a>
+        <img src="img/map.png" width="560" height="222" alt="Наш адрес">
         <!--Здесь будет подключена форма - карта-->
       </section>
         <a href="write-us" class="button">Напишите нам</a>
     </main>
     <footer class="main-footer">
       <p class="footer-contacts">
-        <a class="main-logo">Device</a><br>
+        <a class="main-logo" aria-label="Device">
+          <img src="img/logo_down.png" width="163" height="36" alt="Device">
+      </a><br>
         г. Москва, ул. Строителей, 15
       </p>
       <div class="user-navigation">
@@ -216,7 +234,7 @@
     <section class="gallery">
       <h2 class="visually-hidden">Фото товара</h2>
       <figure class="galery-content">
-        <a href="#"><img src="img/fitness-bracelet.jpg" width="200" height="100" alt="Фитнес-браслет"></a>
+        <a href="#"><img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет"></a>
       </figure>
     </section>
     <section class="features">
@@ -242,7 +260,7 @@
     <section class="gallery">
       <figure class="galery-content">
         <h2 class="visually-hidden">Фото товара</h2>
-        <a href="#"><img src="img/quadcopter.jpg" width="200" height="100" alt="Квадрокоптер"></a>
+        <a href="#"><img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер"></a>
       </figure>
     </section>
     <section class="features">
