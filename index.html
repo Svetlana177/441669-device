@@ -8,16 +8,18 @@
     <header class="main-header">
       <p>
         <a class="main-logo" aria-label="Device">
-          <img src="img/logo.png" width="164" height="36" alt="Device">
+          <img src="img/logo.png" width="163" height="36" alt="Device">
         </a>
-      <!-- все элементы с классом class="visually-hidden" будут не видны на странице(спрятаны средствами CSS)-->
+      </p>
       <h1 class="visually-hidden">Device</h1>
-      <!-- Здесь будет форма-->
-      <span class="search-site">Поиск по сайту</span>
+      <p class="visually-hidden">
+        <input type="search" name="search-cite" placeholder="Поиск по сайту">
+        Поиск по сайту
+      </p>
       <div class="user-navigation">
-        <a href="#" class="button">Войти</a>
-        <a href="#" class="button">Сравнить</a>
-        <a href="#" class="button">Корзина</a>
+        <a href="login.html" class="login-link">Войти</a>
+        <a href="compare.html" class="compare">Сравнить</a>
+        <a href="basket.html" class="basket">Корзина</a>
       </div>
       <nav class="main-navidation">
         <ul class="catalog-nav">
@@ -32,9 +34,11 @@
     </header>
     <main class="container">
       <section class="gallery">
-        <figure class="galery-content">
+      <figure class="galery-content">
           <h2 class="visually-hidden">Фото товара</h2>
-          <a href="#"><img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка"></a>
+          <a href="foto.html" aria-label="Селфи-палка">
+            <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">
+          </a>
         </figure>
       </section>
       <section class="features">
@@ -64,7 +68,9 @@
         <ul>
           <li class="catalog-item">
             <p class="catalog-item-images">
-              <a href="catalog-item.html"><img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность"></a>
+              <a href="catalog-item.html" aria-label="Виртуальная реальность">
+                <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+              </a>
             </p>
             <h3>
               <a href="catalog-item.html">Виртуальная реальность</a>
@@ -72,7 +78,8 @@
           </li>
           <li class="catalog-item">
             <p class="catalog-item-images">
-              <a href="catalog-item.html"><img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи"></a>
+              <a href="catalog-item.html" aria-label="Моноподы для селфи">
+                <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи"></a>
             </p>
             <h3>
               <a href="catalog-item.html">Моноподы для селфи</a>
@@ -80,7 +87,9 @@
           </li>
           <li class="catalog-item">
             <p class="catalog-item-images">
-              <a href="catalog-item.html"><img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры"></a>
+              <a href="catalog-item.html" aria-label="Экшн-камеры">
+                <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+              </a>
             </p>
             <h3>
               <a href="catalog-item.html">Экшн-камеры</a>
@@ -96,7 +105,9 @@
           </li>
           <li class="catalog-item">
             <p class="catalog-item-images">
-              <a href="catalog-item.html"><img src="img/popular-5.svg" width="56" height="98" alt="Умные часы"></a>
+              <a href="catalog-item.html" aria-label="Умные часы">
+                <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+              </a>
             </p>
             <h3>
               <a href="catalog-item.html">Умные часы</a>
@@ -104,7 +115,9 @@
           </li>
           <li class="catalog-item">
             <p class="catalog-item-images">
-              <a href="catalog-item.html"><img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры"></a>
+              <a href="catalog-item.html" aria-label="Квадрокоптеры">
+                <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+              </a>
             </p>
             <h3>
               <a href="catalog-item.html">Квадрокоптеры</a>
@@ -165,11 +178,11 @@
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
-        <a href="map.html" class="visually-hidden">Как проехать</a>
-        <img src="img/map.png" width="560" height="222" alt="Наш адрес">
-        <!--Здесь будет подключена форма - карта-->
-      </section>
+        <a class="map" href="map.html">Как нас найти</a>
+        <!--см форма ниже-->
         <a href="write-us" class="button">Напишите нам</a>
+        <!--форма см ниже-->
+      </section>
     </main>
     <footer class="main-footer">
       <p class="footer-contacts">
@@ -179,9 +192,9 @@
         г. Москва, ул. Строителей, 15
       </p>
       <div class="user-navigation">
-        <a href="#" class="button">Войти</a>
-        <a href="#" class="button">Сравнить</a>
-        <a href="#" class="button">Корзина</a>
+        <a href="login.html" class="login-link">Войти</a>
+        <a href="compare.html" class="compare">Сравнить</a>
+        <a href="basket.html" class="basket">Корзина</a>
       </div>
       <section class="footer-servise">
         <h2 class="visually-hidden">Сопутствующие услуги</h2>
@@ -204,18 +217,7 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>
-    <section class="modal modal-write-us">
-      <h2 class="visually-hidden">Обратная связь</h2>
-      <p class="visyally-hidden">Напишите нам</p>
-       <!-- Здесь будет форма -->
-       <span class="modal-close">x</span>
-       <a href="modal-send" class="button">Отправить</a>
-    </section>
-    <section class="modal map-group">
-      <h2 class="visually-hidden">Как нас найти</h2>
-      <!-- Здесь будет форма, карта -->
-      <span class="modal-close">x</span>
-    </section>
+
     <nav class="main-navidation">
       <ul class="catalog-nav">
         <li>
@@ -234,7 +236,9 @@
     <section class="gallery">
       <h2 class="visually-hidden">Фото товара</h2>
       <figure class="galery-content">
-        <a href="#"><img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет"></a>
+        <a href="#" aria-label="Фитнес-браслет">
+          <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+        </a>
       </figure>
     </section>
     <section class="features">
@@ -260,7 +264,9 @@
     <section class="gallery">
       <figure class="galery-content">
         <h2 class="visually-hidden">Фото товара</h2>
-        <a href="#"><img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер"></a>
+        <a href="#" aria-label="Квадракоптер">
+          <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
+        </a>
       </figure>
     </section>
     <section class="features">
@@ -284,6 +290,38 @@
           <td> 50 метрв</td>
         </tr>
       </table>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.png" width="560" height="222" alt="Офис компании по адресу: г. Москва, ул. Строителей, 15">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <p class="visyally-hidden">Напишите нам</p>
+       <!-- Здесь будет форма -->
+       <span class="modal-close">x</span>
+       <a href="modal-send" class="button">Отправить</a>
+    </section>
+    <section clas="modal modal-write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="write-us-user-text" for="user-name">Ваше имя:</label>
+          <input type="text" class="write-us-form" id="user-name" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="write-us-text" for="user-e-mail">Ваш e-mail:</label>
+          <input class="write-us-form" id="user-e-mail" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <label class="write-us-text" for="free">Текст письма</label><br>
+        <textarea id="free" class="write-us-form" name="comment" id="comment-field" rows="10" placeholder="В свободной форме">В свободной форме</textarea>
+        <p>
+          <input class="write-us-send" type="submit" value="Отправить">
+        </p>
+      </form>
     </section>
   </body>
 </html>
