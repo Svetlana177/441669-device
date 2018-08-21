@@ -11,7 +11,9 @@
         <img src="img/logo.png" width="164" height="36" alt="Device">
         </a>
       </p>
-      <p class="visually-hidden"><input type="search" name="search-cite" placeholder="Поиск по      сайту">Поиск по сайту</p>
+      <p>
+        <input type="search" name="search-cite" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+      </p>
       <div class="user-navigation">
         <a href="client.html" class="client">Валентин Петухов</a>
         <a href="logout.html" class="logout">Выйти</a>
@@ -36,8 +38,9 @@
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
+      <h2 class="visually-hidden">Фильтр товаров</h2>
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <h3>Фильтр:</h3>
         <div class="filters-cost">
             <label for="cost">Стоимость</label><br>
               <span class="filter-cost-number">от 0</span>
@@ -46,8 +49,7 @@
         </div>
       </section>
       <section class="filters">
-       <h2 class="visually-hidden">Фильтр товаров</h2>
-       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Цвет</legend>
           <ul>
@@ -77,16 +79,38 @@
           <legend>Bluetooth</legend>
           <ul>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="with-bluetooth" value="with-bluetooth" checked id="with-bluetooth">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="with-bluetooth" checked id="with-bluetooth">
               <label for="with-bluetooth">Есть</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="without-bluetooth" value="without-bluetooth" id="without-bluetooth">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="without-bluetooth" id="without-bluetooth">
               <label for="without-bluetooth">Нет</label>
             </li>
           </ul>
         </fieldset>
+        <p>
           <button type="submit" class="filter-button button">Показать</button>
+        </p>
+        <fieldset>
+          <legend>Сортировка:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter" value="filter-cost" checked id="filter-cost">
+              <label for="filter-cost">По цене</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter" value="filter-type" id="filter-type">
+              <label for="filter-type">По типу</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter" value="filter-popular" id="filter-popular">
+              <label for="filter-popular">По популярности</label>
+            </li>
+          </ul>
+        </fieldset>
+        <p>
+          <button type="submit" class="filter-button button">Показать</button>
+        </p>
         </form>
       </section>
       <section class="products">
@@ -102,7 +126,7 @@
               <b>500 руб.</b>
             </p>
             <p class="products-item-image">
-              <a href="products-item.html">
+              <a href="products-item.html" aria-label="Любительская селфи-палка">
                 <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
               </a>
             </p>
@@ -120,7 +144,7 @@
               <b>1500 руб.</b>
             </p>
             <p class="products-item-image">
-                <a href="products-item.html">
+                <a href="products-item.html" aria-label="Профессиональная селфи-палка">
                 <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
               </a>
             </p>
@@ -135,7 +159,7 @@
               <b>2500 руб.</b>
             </p>
             <p class="products-item-image">
-              <a href="products-item.html">
+              <a href="products-item.html" aria-label="Непотопляемая селфи-палка">
                 <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
               </a>
             </p>
@@ -153,14 +177,26 @@
               <b>4900 руб.</b>
             </p>
             <p class="products-item-image">
-              <a href="products-item.html">
+              <a href="products-item.html" aria-label="Селфи-палка следуй за мной">
                 <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка следуй за мной">
               </a>
             </p>
           </li>
         </ul>
+        <button class="button gallery-button gallery-button-back" type="button">Назад</button>
+          <ul class="pagination-list">
+              <li class="pagination-item pagination-item-current">
+                <a aria-label="Страница 1">1</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" aria-label="Страница 2">2</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" aria-label="Страница 3">3</a>
+              </li>
+            </ul>
+        <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
      </section>
-        <!-- Здесь будет форма-->
     </main>
     <footer class="main-footer">
       <p class="footer-contacts">
@@ -186,9 +222,9 @@
       <p class=footer-phone>Тел.: +7 (495) 495-95-95</p>
       <div class="footer-social">
         <ul>
-          <li><a href="#" class="social-button">Фейсбук</a></li>
-          <li><a href="#" class="social-button">Инстаграм</a></li>
-          <li><a href=# class="social-button">Твиттер</a></li>
+          <li><a href="#" class="social-button" aria-label="Мы в Facebook">Фейсбук</a></li>
+          <li><a href="#" class="social-button" aria-label="Мы в Instagram">Инстаграм</a></li>
+          <li><a href=# class="social-button" aria-label="Мы в Twitter">Твиттер</a></li>
         </ul>
       </div>
       <p class="footer-copyright">

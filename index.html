@@ -12,9 +12,8 @@
         </a>
       </p>
       <h1 class="visually-hidden">Device</h1>
-      <p class="visually-hidden">
-        <input type="search" name="search-cite" placeholder="Поиск по сайту">
-        Поиск по сайту
+      <p>
+        <input type="search" name="search-cite" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
       </p>
       <div class="user-navigation">
         <a href="login.html" class="login-link">Войти</a>
@@ -47,7 +46,7 @@
           как Бен Стиллер!
         </h2>
         <p>Самая длинная палка селфи доступна в нашем магазине</p>
-        <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм</p>
+        <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
         <a href="catalog.html" class="features-details">Подробнее</a>
         <!-- Здесь будет форма-->
         <table class="features-table">
@@ -97,7 +96,9 @@
           </li>
           <li class="catalog-item">
             <p class="catalog-item-images">
-              <a href="catalog-item.html"><img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты"></a>
+              <a href="catalog-item.html" aria-label="Фитнес-браслеты">
+                <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+              </a>
             </p>
             <h3>
               <a href="catalog-item.html">Фитнес-браслеты</a>
@@ -125,7 +126,7 @@
           </li>
         </ul>
       </section>
-      <!-- Здесь будет правильная форма-->
+      <!-- Здесь будет взаимосвязь элементов  Доставка-Описание; Гарантия-Описание; Кредит-Описание-->
       <section class="service">
         <h2 class="visually-hidden">Сопутствующие услуги</h2>
         <ul class="service-item">
@@ -154,7 +155,7 @@
           Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
         </p>
       </section>
-      <!-- здесь форма заканчивается -->
+      <!-- здесь заканчивается -->
       <section class="partners">
         <h2 class="visually-hidden">Партнеры</h2>
         <a href="#">dja</a>
@@ -178,7 +179,13 @@
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
-        <a class="map" href="map.html">Как нас найти</a>
+        <p>
+            <img src="img/map.png" width="560" height="222" alt="Офис компании по адресу: г. Москва, ул. Строителей, 15">
+        </p>
+        <a class="map" href="map.html" aria-label="Как нас найти">
+
+
+        </a>
         <!--см форма ниже-->
         <a href="write-us" class="button">Напишите нам</a>
         <!--форма см ниже-->
@@ -207,9 +214,9 @@
       <p class=footer-phone>Тел.: +7 (495) 495-95-95</p>
       <div class="footer-social">
         <ul>
-          <li><a href="#" class="social-button">Фейсбук</a></li>
-          <li><a href="#" class="social-button">Инстаграм</a></li>
-          <li><a href=# class="social-button">Твиттер</a></li>
+          <li><a href="#" class="social-button" aria-label="Мы в Facebook">Фейсбук</a></li>
+          <li><a href="#" class="social-button" aria-label="Мы в Instagram">Инстаграм</a></li>
+          <li><a href=# class="social-button" aria-label="Мы в Twitter">Твиттер</a></li>
         </ul>
       </div>
       <p class="footer-copyright">
@@ -219,18 +226,14 @@
     </footer>
 
     <nav class="main-navidation">
+      <h3>Каталог товаров</h3>
       <ul class="catalog-nav">
-        <li>
-          <a href="catalog.html">Каталог товаров</a>
-          <ul>
-            <li><a href="catalog-item.html">Виртуальная реальность</a></li>
-            <li><a href="catalog-item.html">Моноподы для селфи</a></li>
-            <li><a href="catalog-item.html">Экшн-камеры</a></li>
-            <li><a href="catalog-item.html">Фитнес-браслеты</a></li>
-            <li><a href="catalog-item.html">Умные часы</a></li>
-            <li><a href="catalog-item.html">Квадрокоптеры</a></li>
-          </ul>
-        </li>
+        <li><a href="catalog-item.html">Виртуальная реальность</a></li>
+        <li><a href="catalog-item.html">Моноподы для селфи</a></li>
+        <li><a href="catalog-item.html">Экшн-камеры</a></li>
+        <li><a href="catalog-item.html">Фитнес-браслеты</a></li>
+        <li><a href="catalog-item.html">Умные часы</a></li>
+        <li><a href="catalog-item.html">Квадрокоптеры</a></li>
       </ul>
     </nav>
     <section class="gallery">
@@ -294,19 +297,14 @@
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
-        <img src="img/map.png" width="560" height="222" alt="Офис компании по адресу: г. Москва, ул. Строителей, 15">
+        <img src="img/map-big.jpg" width="994" height="593" alt="Офис компании по адресу: г. Москва, ул. Строителей, 15">
       </p>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <section class="modal modal-write-us">
+
+    <section clas="modal modal-write-us">
       <h2 class="visually-hidden">Обратная связь</h2>
       <p class="visyally-hidden">Напишите нам</p>
-       <!-- Здесь будет форма -->
-       <span class="modal-close">x</span>
-       <a href="modal-send" class="button">Отправить</a>
-    </section>
-    <section clas="modal modal-write-us">
-      <h2 class="visually-hidden">Напишите нам</h2>
       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="write-us-user-text" for="user-name">Ваше имя:</label>
@@ -317,11 +315,13 @@
           <input class="write-us-form" id="user-e-mail" type="email" name="email" placeholder="email@example.com">
         </p>
         <label class="write-us-text" for="free">Текст письма</label><br>
-        <textarea id="free" class="write-us-form" name="comment" id="comment-field" rows="10" placeholder="В свободной форме">В свободной форме</textarea>
+        <textarea id="free" class="write-us-form" name="comment" id="comment-field" rows="10" placeholder="В свободной форме"></textarea>
         <p>
+          Отправить
           <input class="write-us-send" type="submit" value="Отправить">
         </p>
       </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
