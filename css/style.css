@@ -1,0 +1,348 @@
+
+
+body{
+  margin:0;
+  padding:0;
+  font-family: "Gilroyextrabold", Candara, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 800;
+  color: #000000;
+
+  background-color: #ffffff;
+  }
+
+.visually-hidden{
+  color: white;
+  opacity: 0;
+}
+
+a{
+  text-decoration: none;
+  color:#000000;
+}
+.button-search{
+  font: inherit;
+
+  text-align: center;
+  color: #ac9e69;
+  vertical-align: middle;
+
+  border: none;
+}
+
+.button-search:hover::placeholder {
+  color: #635a3c;
+ }
+
+/*.button-search:focus::placeholder::after{
+
+  content: "Найти";
+  color: #000000;
+  outline-color: white;
+}*/
+
+
+.user-navigation-color{
+  background-color: #f7e296;
+}
+
+.user-navigation{
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+}
+
+.main-navigation,
+.features-details{
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform:uppercase;
+  }
+
+.catalog-nav,
+.site-nav,
+.site-navigation-current,
+.footer-social li {
+  list-style: none;
+}
+/*footer*/
+.footer-servise a,
+.user-navigation a,
+.footer-social a{
+  color:#ffffff;
+}
+
+.footer-servise a:hover{
+  color:#b5b5b5;
+}
+
+.footer-servise a:active{
+  color:#7e7e7e;
+}
+.user-navigation-footer a{
+color:#c8c8c8;
+}
+
+.user-navigation-footer a:hover{
+color:#ffffff;
+}
+
+.user-navigation-footer a:active{
+color:#7e7e7e;
+}
+
+.user-navigation a,
+.catalog-nav a,
+.site-nav a,{
+  color: #000000;
+}
+
+.user-navigation a:hover,
+.catalog-nav a:hover,
+.site-nav a:hover{
+  color: #635a3c;
+}
+
+.user-navigation a:active,
+.catalog-nav a:active,
+.site-nav a:active{
+  color: #ac9e69;
+}
+.main-logo:hover{
+  opacity: 0.6;
+}
+.main-logo:active{
+  opacity: 0.3;
+}
+
+.logout:visited{
+  color:#ac9e69;
+}
+
+.catalog-item{
+  list-style: none;
+}
+
+.catalog-item a,
+.about-us-partner li{
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.features h2{
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.features{
+  letter-spacing: 0.01em;
+}
+.features p,
+.service-description p,
+.service-garanty p,
+.service-kredit p{
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color:#464646;
+}
+
+.features-line th{
+  font-size: 13px;
+  line-height: 20px;
+  color:#464646;
+}
+.features-line td{
+  font-size: 36px;
+  line-height: 48px;
+}
+.catalog-item a:active{
+  color:#b2b2b2;
+}
+
+.catalog-item-image{
+  background-color: #f7e296;
+}
+
+.catalog-item-image:hover{
+  background-color: #f0c52e;
+}
+
+.catalog-item-image:active{
+  background-color: #f0c52e;
+  opacity: 0.5;
+}
+
+.service-service-description{
+  background-color: #e5e5e5;
+}
+
+.service-item{
+  list-style: none;
+}
+
+.service-item{
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+
+.features-details,
+.service-item-middle,
+.about-us-detail,
+.button {
+  background-color: #f0c52e;
+}
+
+.features-details:active,
+.service-item-middle:active,
+.about-us-detail:active{
+  color: #a88a20;
+}
+
+.slider-features{
+  list-style:none;
+}
+
+.service-description h2,
+.service-garanty h2,
+.service-kredit h2,
+.about-us h2,
+.contacts h2{
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+}
+
+.partner-1{
+    display: inline-block;
+  background-image: url("../img/logo-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:260px;
+  min-height: 100px;
+  opacity: 0.2;
+
+}
+
+.partner-1:hover{
+  display: inline-block;
+  background-image: url("../img/logo-1_hover_red.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:260px;
+  min-height: 100px;
+  opacity: 1;
+}
+
+.partner-2{
+    display: inline-block;
+  background-image: url("../img/logo-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:260px;
+  min-height: 100px;
+  opacity: 0.2;
+
+}
+
+.partner-2:hover{
+    display: inline-block;
+  background-image: url("../img/logo-2_hover_blue.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:260px;
+  min-height: 100px;
+  opacity: 1;
+}
+
+
+.partner-3{
+    display: inline-block;
+  background-image: url("../img/logo-3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:260px;
+  min-height: 100px;
+  opacity: 0.2;
+
+}
+
+.partner-3:hover{
+    display: inline-block;
+  background-image: url("../img/logo-3_hover_blue.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:260px;
+  min-height: 100px;
+  opacity: 1;
+}
+
+.partner-4{
+    display: inline-block;
+  background-image: url("../img/logo-4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:260px;
+  min-height: 100px;
+  opacity: 0.2;
+}
+
+.partner-4:hover{
+    display: inline-block;
+  background-image: url("../img/logo-4-hover_blue.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width:260px;
+  min-height: 100px;
+  opacity: 1;
+}
+
+.about-us-description{
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  color:#464646;
+}
+.about-us-partner{
+list-style: none;
+}
+
+.main-footer{
+  background-color: #464646;
+  color:#ffffff;
+}
+
+/*pop up*/
+.write-us-user-text{
+  font-size: 18px;
+  line-height: 24px;
+}
+.write-us-form{
+  background-color: #f2f2f2;
+  border: none;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  }
+
+.write-us-send {
+  background-color: #f0c52e;
+  border: none;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+
+}

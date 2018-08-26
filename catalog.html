@@ -3,33 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс_catalog</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700,800&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <p>
-        <a class="main-logo" aria-label="Device">
+        <a href="index.html" class="main-logo" aria-label="Device">
         <img src="img/logo.png" width="164" height="36" alt="Device">
         </a>
       </p>
       <p>
-        <input type="search" name="search-cite" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+        <input class="button-search" type="search" name="search-cite" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
       </p>
-      <div class="user-navigation">
-        <a href="client.html" class="client">Валентин Петухов</a>
-        <a href="logout.html" class="logout">Выйти</a>
-        <a href="compare.html" class="compare">Сравнить</a>
-        <a href="basket.html" class="basket">Корзина</a>
+      <div class="user-navigation-color">
+        <div class="user-navigation">
+          <a href="client.html" class="client">Валентин Петухов</a>
+          <a href="index.html" class="logout">Выйти</a>
+          <a href="compare.html" class="compare">Сравнить</a>
+          <a href="basket.html" class="basket">Корзина</a>
+        </div>
+        <nav class="main-navigation">
+          <ul class="catalog-nav">
+            <li><a href="catalog.html">Каталог товаров</a></li>
+          </ul>
+          <ul class="site-nav">
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="guarantee.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-navidation">
-        <ul class="catalog-nav">
-          <li><a href="catalog.html">Каталог товаров</a></li>
-        </ul>
-        <ul class="site-nav">
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
     </header>
     <main class="container">
       <h1>Моноподы для селфи</h1>

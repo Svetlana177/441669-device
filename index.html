@@ -3,6 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700,800&amp;subset=cyrillic" rel="stylesheet">
+    <style>
+    @font-face {
+    font-family: "Gilroyextrabold";
+    src: url(fonts/gilroy/Gilroyextrabold.ttf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+   font-family: "Gilroyextrabold";
+   src: url(fonts/gilroy/Gilroylight.ttf); /* Путь к файлу со шрифтом */
+  }
+   </style>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -13,23 +26,25 @@
       </p>
       <h1 class="visually-hidden">Device</h1>
       <p>
-        <input type="search" name="search-cite" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+        <input class="button-search" type="search" name="search-cite" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
       </p>
-      <div class="user-navigation">
-        <a href="login.html" class="login-link">Войти</a>
-        <a href="compare.html" class="compare">Сравнить</a>
-        <a href="basket.html" class="basket">Корзина</a>
+      <div class="user-navigation-color">
+        <div class="user-navigation">
+          <a href="catalog.html" class="login-link">Войти</a>
+          <a href="compare.html" class="compare">Сравнить</a>
+          <a href="basket.html" class="basket">Корзина</a>
+        </div>
+        <nav class="main-navigation">
+          <ul class="catalog-nav">
+            <li><a href="catalog.html">Каталог товаров</a></li>
+          </ul>
+          <ul class="site-nav">
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="guarantee.html">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-navidation">
-        <ul class="catalog-nav">
-          <li><a href="catalog.html">Каталог товаров</a></li>
-        </ul>
-        <ul class="site-nav">
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
     </header>
     <main class="container">
       <section class="gallery">
@@ -42,13 +57,33 @@
       </section>
       <section class="features">
         <h2>
-          Делай селфи<br>
+          Делай селфи,<br>
           как Бен Стиллер!
         </h2>
         <p>Самая длинная палка селфи доступна в нашем магазине</p>
         <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-        <a href="catalog.html" class="features-details">Подробнее</a>
-        <!-- Здесь будет форма-->
+
+       <!--связать форму со слайдами-->
+
+        <legend> <a href="catalog.html" class="features-details">Подробнее</a></legend>
+        <ul class="slider-features">
+          <li class="slide-radio">
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sliders" value="first-slide" checked id="first-slide">
+            <label for="first-slide" class="visually-hidden">&#171;Селфи палка&#187;</label>
+          </li>
+          <li class="slide-radio">
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sliders" value="second-slide" id="second-slide">
+            <label for="second-slide" class="visually-hidden">&#171;Фитнес-браслеты&#187;</label>
+          </li>
+          <li class="slide-radio">
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sliders" value="third-slide" id="third-slide">
+            <label for="third-slide" class="visually-hidden">&#171;Квадрокоптер&#187;</label>
+          </li>
+        </ul>
+      </fieldset>
+
+
+
         <table class="features-table">
           <tr class="features-line">
             <th>Длина палки</th>
@@ -62,17 +97,7 @@
           </tr>
         </table>
       </section>
-      <ul class="slider-features">
-        <li class="slide-radio">
-          <button type="button" class="slide-btn">Первый слайд</button>
-        </li>
-        <li class="slide-radio">
-          <button type="button" class="slide-btn">Второй слайд</button>
-        </li>
-        <li class="slide-radio">
-          <button type="button" class="slide-btn">Третий слайд</button>
-        </li>
-      </ul>
+
       <section class="catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul>
@@ -129,48 +154,50 @@
         </ul>
       </section>
       <!-- Здесь будет взаимосвязь элементов  Доставка-Описание; Гарантия-Описание; Кредит-Описание-->
-      <section class="service">
-        <h2 class="visually-hidden">Сопутствующие услуги</h2>
-        <ul class="service-item">
-          <li>Доставка</li>
-          <li>Гарантия</li>
-          <li>Кредит</li>
-        </ul>
-      </section>
-      <section class="service-description">
-        <h2>Доставка</h2>
-        <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему
-            подъезду совершенно бесплатно! Ведь мы неплохо
-            заработаем, поднимая его на ваш этаж.
-        </p>
-      </section>
-      <section class="service-garanty">
-        <h2>Гарантия</h2>
-        <p>
-          Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.
-        </p>
-      </section>
-      <section class="service-kredit">
-        <h2>Кредит</h2>
-        <p>
-          Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-        </p>
-      </section>
+      <div class="service-service-description">
+        <section class="service">
+          <h2 class="visually-hidden">Сопутствующие услуги</h2>
+          <ul class="service-item">
+            <li class="service-item-middle">Доставка</li>
+            <li class="service-item-middle">Гарантия</li>
+            <li class="service-item-middle">Кредит</li>
+          </ul>
+        </section>
+        <section class="service-description">
+          <h2>Доставка</h2>
+          <p>
+              Мы с удовольствием доставим ваш товар прямо к вашему
+              подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.
+          </p>
+        </section>
+        <section class="service-garanty">
+          <h2>Гарантия</h2>
+          <p>
+            Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.
+          </p>
+        </section>
+        <section class="service-kredit">
+          <h2>Кредит</h2>
+          <p>
+            Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+          </p>
+        </section>
+      </div>
       <!-- здесь заканчивается -->
       <section class="partners">
         <h2 class="visually-hidden">Партнеры</h2>
         <a href="#" aria-label="dji">
-          <img src="img/logo-1.png" width="260" height="100" alt="dji">
+          <div class="partner-1"></div>
         </a>
         <a href="#" aria-label="Sp-gadgets">
-          <img src="img/logo-2.png" width="260" height="100" alt="Sp-gadgets">
+          <div class="partner-2"></div>
         </a>
         <a href="#" aria-label="GoPro">
-          <img src="img/logo-3.png" width="260" height="100" alt="GoPro">
+          <div class="partner-3"></div>
         </a>
         <a href="#" aria-label="Vive">
-          <img src="img/logo-4.png" width="260" height="100" alt="Vive">
+          <div class="partner-4"></div>
         </a>
       </section>
       <section class="about-us">
@@ -192,7 +219,7 @@
         <p>
             <img src="img/map.png" width="560" height="222" alt="Офис компании по адресу: г. Москва, ул. Строителей, 15">
         </p>
-        <a class="map" href="map.html" aria-label="Как нас найти">Как нас найти</a>
+        <a class="map" href="map.html" aria-label="Как нас найти"></a>
         <!--см форма ниже-->
         <a href="write-us" class="button">Напишите нам</a>
         <!--форма см ниже-->
@@ -205,7 +232,7 @@
       </a><br>
         г. Москва, ул. Строителей, 15
       </p>
-      <div class="user-navigation">
+      <div class="user-navigation-footer">
         <a href="login.html" class="login-link">Войти</a>
         <a href="compare.html" class="compare">Сравнить</a>
         <a href="basket.html" class="basket">Корзина</a>
@@ -214,8 +241,8 @@
         <h2 class="visually-hidden">Сопутствующие услуги</h2>
         <ul>
           <li class="site-navigation-current"><a href="delivery.html" >Доставка</a></li>
-          <li><a href="guarantee.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="site-navigation-current"><a href="guarantee.html">Гарантия</a></li>
+          <li class="site-navigation-current"><a href="contacts.html">Контакты</a></li>
         </ul>
       </section>
       <p class=footer-phone>Тел.: +7 (495) 495-95-95</p>
@@ -228,11 +255,11 @@
       </div>
       <p class="footer-copyright">
         <b>Разработано:</b>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy"></a>
       </p>
     </footer>
 
-    <nav class="main-navidation">
+    <nav class="main-navigation">
       <h3>Каталог товаров</h3>
       <ul class="catalog-nav">
         <li><a href="catalog-item.html">Виртуальная реальность</a></li>
@@ -311,21 +338,20 @@
 
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <p class="visyally-hidden">Напишите нам</p>
-      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="visually-hidden">Напишите нам</p>
+      <form class="write-us-form-1" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label class="write-us-user-text" for="user-name">Ваше имя:</label>
+          <label class="write-us-user-text" for="user-name">Ваше имя:</label><br>
           <input type="text" class="write-us-form" id="user-name" name="name" placeholder="Имя Фамилия">
         </p>
         <p>
-          <label class="write-us-text" for="user-e-mail">Ваш e-mail:</label>
+          <label class="write-us-user-text" for="user-e-mail">Ваш e-mail:</label><br>
           <input class="write-us-form" id="user-e-mail" type="email" name="email" placeholder="email@example.com">
         </p>
-        <label class="write-us-text" for="comment-field">Текст письма</label><br>
+        <label class="write-us-user-text" for="comment-field">Текст письма</label><br>
         <textarea class="write-us-form" name="comment" id="comment-field" rows="10" placeholder="В свободной форме"></textarea>
         <p>
-          Отправить
-          <input class="write-us-send" type="submit" value="Отправить">
+          <input class="write-us-send" type="submit" value="Отправить" aria-label="Отправить">
         </p>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
