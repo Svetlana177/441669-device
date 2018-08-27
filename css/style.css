@@ -22,18 +22,35 @@ a{
   color:#000000;
 }
 .button-search{
-  font: inherit;
-
-  text-align: center;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.01em;
   color: #ac9e69;
   vertical-align: middle;
-
   border: none;
 }
 
 .button-search:hover::placeholder {
   color: #635a3c;
+  border:none;
  }
+
+ .header-search input:focus{
+   outline:1px solid #ffffff;
+
+   color:#000000;
+ }
+
+input:focus+button{
+  display: block;
+  color:red;
+  margin-right:100px;
+  content: "Найти";
+ border-bottom:1px solid #000000;
+
+}
+
 
 /*.button-search:focus::placeholder::after{
 
@@ -71,9 +88,9 @@ a{
 }
 /*footer*/
 .footer-servise a,
-.user-navigation a,
 .footer-social a{
   color:#ffffff;
+  text-transform: uppercase;
 }
 
 .footer-servise a:hover{
@@ -97,7 +114,7 @@ color:#7e7e7e;
 
 .user-navigation a,
 .catalog-nav a,
-.site-nav a,{
+.site-nav a{
   color: #000000;
 }
 
@@ -218,14 +235,15 @@ color:#7e7e7e;
 .service-garanty h2,
 .service-kredit h2,
 .about-us h2,
-.contacts h2{
+.contacts h2,
+.breadcrumbs-current h1{
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.1em;
 }
 
 .partner-1{
-    display: inline-block;
+  display: inline-block;
   background-image: url("../img/logo-1.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -246,7 +264,7 @@ color:#7e7e7e;
 }
 
 .partner-2{
-    display: inline-block;
+  display: inline-block;
   background-image: url("../img/logo-2.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -257,7 +275,7 @@ color:#7e7e7e;
 }
 
 .partner-2:hover{
-    display: inline-block;
+  display: inline-block;
   background-image: url("../img/logo-2_hover_blue.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -268,7 +286,7 @@ color:#7e7e7e;
 
 
 .partner-3{
-    display: inline-block;
+  display: inline-block;
   background-image: url("../img/logo-3.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -279,7 +297,7 @@ color:#7e7e7e;
 }
 
 .partner-3:hover{
-    display: inline-block;
+  display: inline-block;
   background-image: url("../img/logo-3_hover_blue.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -289,7 +307,7 @@ color:#7e7e7e;
 }
 
 .partner-4{
-    display: inline-block;
+  display: inline-block;
   background-image: url("../img/logo-4.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -299,7 +317,7 @@ color:#7e7e7e;
 }
 
 .partner-4:hover{
-    display: inline-block;
+  display: inline-block;
   background-image: url("../img/logo-4-hover_blue.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -344,5 +362,198 @@ list-style: none;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.2em;
+}
+/*каталог товаров*/
+.breadcrumbs li{
+  list-style:none;
+}
 
+.breadcrumbs a{
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color:#b2b2b2;
+}
+
+.breadcrumbs a:hover{
+  color:#666666;
+}
+
+.breadcrumbs a:active{
+  color:#e5e5e5;
+}
+
+.filters-filtr{
+  background-color: #dcdcdc;
+  text-transform: uppercase;
+  }
+
+.sort-item{
+  background-color: #ebebeb;
+}
+.sort-item h3{
+  text-transform: uppercase;
+  }
+.sort-item-price,
+.sort-item-type,
+.sort-item-popular{
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color:#b2b2b2;
+  }
+
+.sort-item-price:hover,
+.sort-item-type:hover,
+.sort-item-popular:hover{
+  color:#666666;
+  }
+
+.sort-item-price:active,
+.sort-item-type:active,
+.sort-item-popular:active{
+  color:#000000;
+  }
+
+  /*кнопка по цене нажата, но нужна еще взаимосвязь со стрелками вверх-вниз.*/
+  .sort-item-price:visited {
+    color: #000000;
+  }
+  .filters-color{
+    background-color: #efefef;
+  }
+
+.cost-1,
+.color,
+.bluetooth{
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  border-top: 2px solid #000000;
+  text-align: left;
+  }
+
+.filters li{
+  list-style: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-servise{
+  text-align: center;
+  }
+
+.social-button {
+  color: #ffffff;
+}
+.footer-phone{
+  text-align: right;
+}
+
+.user-navigation-footer,
+.footer-copyright{
+  text-align: right;
+}
+
+.footer-contacts,
+.footer-phone{
+  color:#ffffff;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-weight: 300;
+}
+
+.logout-footer:visited {
+  color: #7e7e7e;
+}
+
+.filter fieldset {
+  border: none;
+}
+.filter legend {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+
+}
+
+.filter-input:disabled + label {
+  color:#a6a6a6;
+}
+
+.products-list li{
+  list-style: none;
+}
+
+.products-item a{
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+}
+
+.products .products-item-price{
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color:#6b6b6b;
+}
+
+.pagination-list {
+  list-style: none;
+}
+.pagination-item a{
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  color: #2f2f2f;
+  font-family: "Gilroyextrabold", Candara, sans-serif;
+  font-weight: 800;
+  background-color:#ebebeb;
+}
+.pagination-item a:hover{
+  color: #a4a4a4;
+}
+.products-button{
+  background-color: #ebebeb;
+}
+
+
+.gallery-button{
+  background-color: #ebebeb;
+  border: none;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: "Gilroyextrabold", Candara, sans-serif;
+  font-weight: 800;
+}
+
+.gallery-button:hover{
+  background-color: #d9d9d9;
+}
+
+.pagination-item-2 a,
+.pagination-item-3 a{
+  color:#a4a4a4;
 }
