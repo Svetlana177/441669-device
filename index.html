@@ -25,11 +25,11 @@
         </a>
       </p>
       <h1 class="visually-hidden">Device</h1>
+    <div class="user-navigation-color">
       <p class="header-search">
         <input class="button-search" type="search" name="search-cite" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
         <button class="search" type="button">Найти</button>
       </p>
-      <div class="user-navigation-color">
         <div class="user-navigation">
           <a href="catalog.html" class="login-link">Войти</a>
           <a href="compare.html" class="compare">Сравнить</a>
@@ -37,7 +37,17 @@
         </div>
         <nav class="main-navigation">
           <ul class="catalog-nav">
-            <li><a href="catalog.html">Каталог товаров</a></li>
+            <li>
+              <a href="catalog.html">Каталог товаров</a>
+              <ul class="catalog-nav">
+                <li><a href="catalog-item.html">Виртуальная реальность</a></li>
+                <li><a href="catalog-item.html">Моноподы для селфи</a></li>
+                <li><a href="catalog-item.html">Экшн-камеры</a></li>
+                <li><a href="catalog-item.html">Фитнес-браслеты</a></li>
+                <li><a href="catalog-item.html">Умные часы</a></li>
+                <li><a href="catalog-item.html">Квадрокоптеры</a></li>
+              </ul>
+            </li>
           </ul>
           <ul class="site-nav">
             <li><a href="delivery.html">Доставка</a></li>
@@ -61,7 +71,7 @@
           Делай селфи,<br>
           как Бен Стиллер!
         </h2>
-        <p>Самая длинная палка селфи доступна в нашем магазине</p>
+        <p class="description-common">Самая длинная палка селфи доступна в нашем магазине</p>
         <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
        <!--связать форму со слайдами-->
        <fieldset>
@@ -81,9 +91,6 @@
           </li>
         </ul>
       </fieldset>
-
-
-
         <table class="features-table">
           <tr class="features-line">
             <th>Длина палки</th>
@@ -164,22 +171,22 @@
           </ul>
         </section>
         <section class="service-description">
-          <h2>Доставка</h2>
-          <p>
+          <h2 class="title-common">Доставка</h2>
+          <p class="description-common">
               Мы с удовольствием доставим ваш товар прямо к вашему
               подъезду совершенно бесплатно! Ведь мы неплохо
               заработаем, поднимая его на ваш этаж.
           </p>
         </section>
         <section class="service-garanty">
-          <h2>Гарантия</h2>
-          <p>
+          <h2 class="title-common">Гарантия</h2>
+          <p class="description-common">
             Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.
           </p>
         </section>
         <section class="service-kredit">
-          <h2>Кредит</h2>
-          <p>
+          <h2 class="title-common">Кредит</h2>
+          <p class="description-common">
             Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
           </p>
         </section>
@@ -201,19 +208,19 @@
         </a>
       </section>
       <section class="about-us">
-        <h2>О нас</h2>
-        <p class="about-us-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="about-us-description">Мы можем доставить ваш товар в самые отдаленные точки России! Device работает со многими транспортными компаниями:</p>
+        <h2 class="title-common">О нас</h2>
+        <p class="about-us-description description-common">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="about-us-description description-common">Мы можем доставить ваш товар в самые отдаленные точки России! Device работает со многими транспортными компаниями:</p>
         <ul class="about-us-partner">
           <li><a href="">Деловые Линии</a></li>
           <li><a href="">Автотрейдинг</a></li>
           <li><a href="">ЖелДорЭкспедиция</a></li>
         </ul>
-        <a href="about-us.html" class="about-us-detail">Подробнее о нас</a>
+        <a href="about-us.html" class="features-details">Подробнее о нас</a>
       </section>
       <section class="contacts">
-        <h2>Контакты</h2>
-        <p>
+        <h2 class="title-common">Контакты</h2>
+        <p class="description-common">
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
         <p>
@@ -221,7 +228,7 @@
         </p>
         <a class="map" href="map.html" aria-label="Как нас найти"></a>
         <!--см форма ниже-->
-        <a href="write-us" class="button">Напишите нам</a>
+        <a href="write-us" class="features-details">Напишите нам</a>
         <!--форма см ниже-->
       </section>
     </main>
@@ -259,17 +266,7 @@
       </p>
     </footer>
 
-    <nav class="main-navigation">
-      <h3>Каталог товаров</h3>
-      <ul class="catalog-nav">
-        <li><a href="catalog-item.html">Виртуальная реальность</a></li>
-        <li><a href="catalog-item.html">Моноподы для селфи</a></li>
-        <li><a href="catalog-item.html">Экшн-камеры</a></li>
-        <li><a href="catalog-item.html">Фитнес-браслеты</a></li>
-        <li><a href="catalog-item.html">Умные часы</a></li>
-        <li><a href="catalog-item.html">Квадрокоптеры</a></li>
-      </ul>
-    </nav>
+
     <section class="gallery">
       <h2 class="visually-hidden">Фото товара</h2>
       <figure class="galery-content">
@@ -283,11 +280,11 @@
         Худеем<br>
         правильно!
       </h2>
-      <p>
+      <p class="description-common">
         Мотивирующие фитнесc-браслеты помогут найти в себе силы<br>
         не пропускать занятия и соблюдать диету.
       </p>
-      <a href="catalog.html" class="features-details">Подробнее</a>
+      <a href="catalog.html" class="about-us-details">Подробнее</a>
       <!-- Здесь будет форма-->
       <table class="features-table">
         <tr class="features-line">
@@ -311,7 +308,7 @@
         Порхает как бабочка,<br>
         жалит, как пчела!
       </h2>
-      <p>
+      <p class="description-common">
         Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
         мощным лазером, замаскированным под стандартную камеру.
       </p>

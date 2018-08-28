@@ -1,5 +1,3 @@
-
-
 body{
   margin:0;
   padding:0;
@@ -21,64 +19,113 @@ a{
   text-decoration: none;
   color:#000000;
 }
+
+/*группа поиск по сайту*/
+
+/*кнопка поиск по сайту*/
 .button-search{
   font-family: "Open Sans Light", Arial, sans-serif;
+  font-size:15px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: 0.01em;
-  color: #ac9e69;
   vertical-align: middle;
   border: none;
+  text-decoration: underline;
+  outline:1px solid #f7e296;
+  background-color: #f7e296;
 }
 
-.button-search:hover::placeholder {
-  color: #635a3c;
-  border:none;
+/*placeholder текст подсказки*/
+.header-search input::placeholder{
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size:15px;
+  font-weight: 300;
+  line-height: 30px;
+  opacity: 0.3;
+  }
+
+.header-search:hover input::placeholder{
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size:15px;
+  font-weight: 300;
+  line-height: 30px;
+  opacity: 0.6;
+}
+
+.header-search:focus input::placeholder:focus{
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size:15px;
+  font-weight: 300;
+  line-height: 30px;
+  opacity: 1;
+}
+
+/*кнопка найти*/
+ .search{
+   background-color: #ffffff;
+   font-family: "Open Sans Light", Arial, sans-serif;
+   font-size:15px;
+   font-weight: 300;
+   line-height: 30px;
+   opacity:0;
  }
 
- .header-search input:focus{
-   outline:1px solid #ffffff;
+.search:focus{
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size:15px;
+  font-weight: 300;
+  line-height: 30px;
+  opacity: 0;
+  }
 
-   color:#000000;
- }
-
+/*связь placeholder и кнопки найти*/
 input:focus+button{
   display: block;
-  color:red;
-  margin-right:100px;
-  content: "Найти";
- border-bottom:1px solid #000000;
-
-}
-
-
-/*.button-search:focus::placeholder::after{
-
-  content: "Найти";
-  color: #000000;
-  outline-color: white;
-}*/
-
+  border: 1px solid #000000;
+  background-color: #f7e296;
+  opacity:1;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size:15px;
+  font-weight: 300;
+  line-height: 30px;
+  }
 
 .user-navigation-color{
   background-color: #f7e296;
 }
 
+/*Войти сравнить корзина*/
 .user-navigation{
   font-family: "Open Sans Light", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: 0.01em;
 }
 
-.main-navigation,
-.features-details{
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.2em;
-  text-transform:uppercase;
+.user-navigation a,
+.catalog-nav a,
+.site-nav a{
+  color: #000000;
   }
+
+.main-logo:hover,
+.user-navigation a:hover,
+.catalog-nav a:hover,
+.site-nav a:hover{
+  opacity: 0.6;
+}
+
+.main-logo:active,
+.catalog-nav a:active,
+.site-nav a:active{
+  opacity: 0.3;
+}
+/*Каталог товаров*/
+.main-navigation{
+font-size: 18px;
+line-height: 24px;
+text-transform: uppercase;
+}
 
 .catalog-nav,
 .site-nav,
@@ -86,160 +133,120 @@ input:focus+button{
 .footer-social li {
   list-style: none;
 }
-/*footer*/
-.footer-servise a,
-.footer-social a{
-  color:#ffffff;
-  text-transform: uppercase;
-}
-
-.footer-servise a:hover{
-  color:#b5b5b5;
-}
-
-.footer-servise a:active{
-  color:#7e7e7e;
-}
-.user-navigation-footer a{
-color:#c8c8c8;
-}
-
-.user-navigation-footer a:hover{
-color:#ffffff;
-}
-
-.user-navigation-footer a:active{
-color:#7e7e7e;
-}
-
-.user-navigation a,
-.catalog-nav a,
-.site-nav a{
-  color: #000000;
-}
-
-.user-navigation a:hover,
-.catalog-nav a:hover,
-.site-nav a:hover{
-  color: #635a3c;
-}
-
-.user-navigation a:active,
-.catalog-nav a:active,
-.site-nav a:active{
-  color: #ac9e69;
-}
-.main-logo:hover{
-  opacity: 0.6;
-}
-.main-logo:active{
-  opacity: 0.3;
-}
-
-.logout:visited{
-  color:#ac9e69;
-}
-
-.catalog-item{
-  list-style: none;
-}
-
-.catalog-item a,
-.about-us-partner li{
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.01em;
-  color: #000000;
-}
 
 .features h2{
   font-size: 47px;
   line-height: 56px;
 }
 
-.features{
-  letter-spacing: 0.01em;
-}
-.features p,
-.service-description p,
-.service-garanty p,
-.service-kredit p{
+/*описание шрифт open suns light*/
+.description-common{
   font-family: "Open Sans Light", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: 0.1em;
   color:#464646;
 }
 
+.filter fieldset,
+.features fieldset{
+  border: none;
+}
+
+/*ссылки Подробнее, Подробнее о нас, Напишите нам */
+.features-details{
+  background-color: #f0c52e;
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+/*сделать*/
+.features-details:hover,
+.service-item-middle:hover,
+.about-us-detail:hover{
+}
+
+/*сделать прозрачность только для текста*/
+.features-details:active,
+.service-item-middle:active,
+.about-us-detail:active{
+  opacity: 0.3;
+}
+
+/*совмещенный слайдер гарантия-доставка-кредит с описанием, доделать*/
+.service{
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: uppercase;
+  }
+
+.service-item-middle{
+  background-color: #f0c52e;
+}
+
+/*Загаловки Доставка, Гарантия, Кредит,  О нас, Контакты,Моноподы для селфи*/
+.title-common{
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+/*Каталог товаров*/
+
+/*текст*/
+.catalog-item{
+  list-style: none;
+}
+
+.catalog-item a{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/*картинка*/
+.catalog-item-image{
+  opacity: 0.5;
+  background-color: #f0c52e;
+}
+
+.catalog-item-image:hover{
+  opacity: 1;
+}
+
+.catalog-item a:active,
+.catalog-item-image:active{
+  opacity: 0.3;
+}
+
+.about-us-partner li{
+list-style: none;
+font-size: 16px;
+line-height: 40px;
+}
+
+/*Таблица*/
 .features-line th{
+  font-family: "Open Sans Light", Arial, sans-serif;
   font-size: 13px;
+  font-weight: 300;
   line-height: 20px;
   color:#464646;
 }
 .features-line td{
+  font-family: "Gilroylight", Candara, sans-serif;
+  font-weight: 300;
   font-size: 36px;
   line-height: 48px;
-}
-.catalog-item a:active{
-  color:#b2b2b2;
-}
-
-.catalog-item-image{
-  background-color: #f7e296;
-}
-
-.catalog-item-image:hover{
-  background-color: #f0c52e;
-}
-
-.catalog-item-image:active{
-  background-color: #f0c52e;
-  opacity: 0.5;
 }
 
 .service-service-description{
   background-color: #e5e5e5;
 }
 
-.service-item{
-  list-style: none;
-}
-
-.service-item{
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-
-.features-details,
-.service-item-middle,
-.about-us-detail,
-.button {
-  background-color: #f0c52e;
-}
-
-.features-details:active,
-.service-item-middle:active,
-.about-us-detail:active{
-  color: #a88a20;
-}
-
+.service-item,
 .slider-features{
-  list-style:none;
-}
-
-.service-description h2,
-.service-garanty h2,
-.service-kredit h2,
-.about-us h2,
-.contacts h2,
-.breadcrumbs-current h1{
-  font-size: 47px;
-  line-height: 48px;
-  letter-spacing: 0.1em;
+  list-style: none;
 }
 
 .partner-1{
@@ -250,7 +257,6 @@ color:#7e7e7e;
   width:260px;
   min-height: 100px;
   opacity: 0.2;
-
 }
 
 .partner-1:hover{
@@ -271,7 +277,6 @@ color:#7e7e7e;
   width:260px;
   min-height: 100px;
   opacity: 0.2;
-
 }
 
 .partner-2:hover{
@@ -284,7 +289,6 @@ color:#7e7e7e;
   opacity: 1;
 }
 
-
 .partner-3{
   display: inline-block;
   background-image: url("../img/logo-3.png");
@@ -293,7 +297,6 @@ color:#7e7e7e;
   width:260px;
   min-height: 100px;
   opacity: 0.2;
-
 }
 
 .partner-3:hover{
@@ -333,14 +336,88 @@ color:#7e7e7e;
   line-height: 30px;
   color:#464646;
 }
-.about-us-partner{
-list-style: none;
-}
 
+/*footer*/
 .main-footer{
   background-color: #464646;
   color:#ffffff;
 }
+
+.footer-contacts,
+.footer-phone{
+  color:#ffffff;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-weight: 300;
+}
+.footer-contacts{
+  text-align: left;
+}
+.footer-phone{
+  text-align: right;
+}
+.footer-servise a{
+  color:#ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-servise a:hover{
+  opacity: 0.6;
+}
+
+.footer-servise a:active{
+  opacity: 0.3;
+}
+.user-navigation-footer a{
+  opacity: 0.7;
+  color:#ffffff;
+}
+
+.user-navigation-footer a:hover{
+  opacity: 1;
+}
+
+.user-navigation-footer a:active{
+opacity: 0.3;
+}
+
+.footer-social a{
+  opacity: 0.3;
+  color:#ffffff;
+  text-transform: uppercase;
+  }
+
+.footer-social a:hover {
+  opacity: 0.6;
+}
+.footer-social a:active {
+  opacity: 0.1;
+}
+.footer-social ul {
+  list-style: none;
+  text-align: center;
+}
+
+.footer-servise{
+  text-align: center;
+  }
+
+.user-navigation-footer,
+.footer-copyright{
+  text-align: right;
+}
+
+.footer-copyright:hover{
+  opacity: 0.6;
+}
+
+.footer-copyright:active{
+  opacity: 0.3;
+}
+
 
 /*pop up*/
 .write-us-user-text{
@@ -354,15 +431,44 @@ list-style: none;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  opacity: 0.5;
   }
+
+.write-us-form:focus{
+  opacity: 0.8;
+  outline:1px solid #f7e296;
+}
+
+.write-us-form:active{
+  opacity: 0.5;
+}
+
+.write-us-form:invalid{
+  opacity: 0.5;
+  background-color: #f6dada;
+  outline:1px solid #f6dada;
+}
 
 .write-us-send {
   background-color: #f0c52e;
   border: none;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0.2em;
 }
+
+
+
+
+/*Следующая страница - catalog*/
+
+/*кнопка выйти*/
+.logout{
+  opacity: 0.3;
+}
+.logout:visited{
+  opacity: 0.3;
+}
+
 /*каталог товаров*/
 .breadcrumbs li{
   list-style:none;
@@ -373,7 +479,6 @@ list-style: none;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.1em;
   color:#b2b2b2;
 }
 
@@ -403,7 +508,6 @@ list-style: none;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0.1em;
   color:#b2b2b2;
   }
 
@@ -432,7 +536,6 @@ list-style: none;
 .bluetooth{
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0.1em;
   border-top: 2px solid #000000;
   text-align: left;
   }
@@ -441,54 +544,17 @@ list-style: none;
   list-style: none;
 }
 
-.footer-social {
-  text-align: center;
-}
-
-.footer-social ul {
-  list-style: none;
-}
-
-.footer-servise{
-  text-align: center;
-  }
-
-.social-button {
-  color: #ffffff;
-}
-.footer-phone{
-  text-align: right;
-}
-
-.user-navigation-footer,
-.footer-copyright{
-  text-align: right;
-}
-
-.footer-contacts,
-.footer-phone{
-  color:#ffffff;
-  font-size: 15px;
-  line-height: 30px;
-  letter-spacing: 0.1em;
-  text-align: left;
-  font-family: "Open Sans Light", Arial, sans-serif;
-  font-weight: 300;
-}
-
 .logout-footer:visited {
   color: #7e7e7e;
 }
 
-.filter fieldset {
-  border: none;
-}
-.filter legend {
+
+
+.filter legend{
   font-family: "Open Sans Light", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 40px;
-  letter-spacing: 0.1em;
 }
 
 .filter-input:hover + label,
@@ -507,14 +573,12 @@ list-style: none;
 .products-item a{
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0.1em;
   font-weight: 800;
 }
 
 .products .products-item-price{
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0.01em;
   color:#6b6b6b;
 }
 
@@ -524,7 +588,6 @@ list-style: none;
 .pagination-item a{
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0.2em;
   color: #2f2f2f;
   font-family: "Gilroyextrabold", Candara, sans-serif;
   font-weight: 800;
@@ -543,7 +606,6 @@ list-style: none;
   border: none;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0.2em;
   text-transform: uppercase;
   font-family: "Gilroyextrabold", Candara, sans-serif;
   font-weight: 800;
