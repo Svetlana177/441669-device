@@ -102,12 +102,6 @@ input:focus+button{
   line-height: 30px;
 }
 
-.user-navigation a,
-.catalog-nav a,
-.site-nav a{
-  color: #000000;
-  }
-
 .main-logo:hover,
 .user-navigation a:hover,
 .catalog-nav a:hover,
@@ -153,11 +147,11 @@ text-transform: uppercase;
   border: none;
 }
 
-/*ссылки Подробнее, Подробнее о нас, Напишите нам */
+/*ссылки Подробнее, Подробнее о нас, Напишите нам*/
 .features-details{
   background-color: #f0c52e;
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 24px;
   text-transform: uppercase;
 }
 
@@ -372,8 +366,12 @@ line-height: 40px;
   opacity: 0.3;
 }
 .user-navigation-footer a{
-  opacity: 0.7;
+
   color:#ffffff;
+}
+
+.user-navigation-footer{
+  opacity: 0.7;
 }
 
 .user-navigation-footer a:hover{
@@ -462,10 +460,13 @@ opacity: 0.3;
 /*Следующая страница - catalog*/
 
 /*кнопка выйти*/
-.logout{
+.logout,
+.logout-footer{
   opacity: 0.3;
 }
-.logout:visited{
+
+.logout:visited,
+.logout-footer:visited{
   opacity: 0.3;
 }
 
@@ -479,20 +480,22 @@ opacity: 0.3;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  color:#b2b2b2;
+  opacity: 0.3;
 }
 
 .breadcrumbs a:hover{
-  color:#666666;
+  opacity: 0.6;
 }
 
 .breadcrumbs a:active{
-  color:#e5e5e5;
+    opacity: 0.1;
 }
 
 .filters-filtr{
   background-color: #dcdcdc;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
   }
 
 .sort-item{
@@ -500,35 +503,42 @@ opacity: 0.3;
 }
 .sort-item h3{
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
   }
-.sort-item-price,
+
+.filter-cost-number{
+  opacity: 0.2;
+}
+
 .sort-item-type,
 .sort-item-popular{
-  font-family: "Open Sans Light", Arial, sans-serif;
-  font-weight: 300;
+  font-family: "Open Sans Regular", Arial, sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color:#b2b2b2;
+  opacity: 0.3;
   }
 
 .sort-item-price:hover,
 .sort-item-type:hover,
 .sort-item-popular:hover{
-  color:#666666;
+  opacity: 0.6;
   }
-
+.price-checked,
 .sort-item-price:active,
 .sort-item-type:active,
 .sort-item-popular:active{
-  color:#000000;
+  opacity: 1;
   }
 
   /*кнопка по цене нажата, но нужна еще взаимосвязь со стрелками вверх-вниз.*/
   .sort-item-price:visited {
-    color: #000000;
+  color: #000000;
   }
   .filters-color{
-    background-color: #efefef;
+  background-color: #efefef;
   }
 
 .cost-1,
@@ -537,20 +547,13 @@ opacity: 0.3;
   font-size: 18px;
   line-height: 24px;
   border-top: 2px solid #000000;
-  text-align: left;
   }
 
 .filters li{
   list-style: none;
 }
 
-.logout-footer:visited {
-  color: #7e7e7e;
-}
-
-
-
-.filter legend{
+.label-color{
   font-family: "Open Sans Light", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -577,9 +580,10 @@ opacity: 0.3;
 }
 
 .products .products-item-price{
-  font-size: 18px;
+  font-family: "Gilroylight", Candara, sans-serif;
+  font-size: 16px;
   line-height: 24px;
-  color:#6b6b6b;
+  color:#464646;
 }
 
 .pagination-list {
@@ -600,22 +604,26 @@ opacity: 0.3;
   background-color: #ebebeb;
 }
 
-
+/*как связать покой наведение предыдущее нажатие?*/
 .gallery-button{
   background-color: #ebebeb;
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
   font-family: "Gilroyextrabold", Candara, sans-serif;
   font-weight: 800;
 }
 
-.gallery-button:hover{
-  background-color: #d9d9d9;
+.gallery-button:active{
+  opacity: 0.3;
 }
 
 .pagination-item-2 a,
 .pagination-item-3 a{
-  color:#a4a4a4;
+  opacity: 0.3;
+}
+
+.gallery-button-back:visited{
+  opacity: 0.3;
 }

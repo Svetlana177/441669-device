@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс_catalog</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700,800&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -73,23 +73,23 @@
               <ul>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
-                  <label for="filter-black">Черный</label>
+                  <label for="filter-black" class="label-color">Черный</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white">
-                  <label for="filter-white">Белый</label>
+                  <label for="filter-white" class="label-color">Белый</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
-                  <label for="filter-blue">Синий</label>
+                  <label for="filter-blue" class="label-color">Синий</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
-                  <label for="filter-red">Красный</label>
+                  <label for="filter-red" class="label-color">Красный</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
-                  <label for="filter-pink">Розовый</label>
+                  <label for="filter-pink" class="label-color">Розовый</label>
                 </li>
               </ul>
             </fieldset>
@@ -98,19 +98,19 @@
               <ul>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="with-bluetooth" checked id="with-bluetooth">
-                  <label for="with-bluetooth">Есть</label>
+                  <label for="with-bluetooth" class="label-color">Есть</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="without-bluetooth" id="without-bluetooth">
-                  <label for="without-bluetooth">Нет</label>
+                  <label for="without-bluetooth" class="label-color">Нет</label>
                 </li>
               </ul>
             </fieldset>
-            <p><button type="submit" class="filter-button button">Показать</button></p>
+            <p><button type="submit" class="filter-button button write-us-send">Показать</button></p>
             <section class="sort-item">
               <h2 class="visually-hidden">Сортировка товара</h2>
                 <h3>Сортировка:</h3>
-                <a class="sort-item-price" href="#">По цене</a>
+                <a class="sort-item-price price-checked" href="#">По цене</a>
                 <a class="sort-item-type" href="#">По типу</a>
                 <a class="sort-item-popular" href="#">По популярности</a>
                 <!--Здесь в CSS будут псевдоэлементы: стрелка вверх и вниз-->
@@ -189,7 +189,7 @@
           </li>
         </ul>
         <div class="products-button">
-        <button class="button gallery-button gallery-button-back" type="button">Назад</button>
+        <button class="button gallery-button feat" type="button">Назад</button>
           <ul class="pagination-list">
               <li class="pagination-item pagination-item-current">
                 <a aria-label="Страница 1">1</a>
