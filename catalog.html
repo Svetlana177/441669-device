@@ -4,11 +4,21 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс_catalog</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=cyrillic" rel="stylesheet">
+    <style>
+      @font-face {
+      font-family: "Gilroyextrabold";
+      src: url(fonts/gilroy/Gilroyextrabold.ttf); /* Путь к файлу со шрифтом */
+      }
+     @font-face {
+     font-family: "Gilroyextrabold";
+     src: url(fonts/gilroy/Gilroylight.ttf); /* Путь к файлу со шрифтом */
+      }
+   </style>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <p>
         <a href="index.html" class="main-logo" aria-label="Device">
         <img src="img/logo.png" width="164" height="36" alt="Device">
@@ -188,7 +198,7 @@
             </p>
           </li>
         </ul>
-        <div class="products-button">
+        <div class="products-button container">
         <button class="button gallery-button feat" type="button">Назад</button>
           <ul class="pagination-list">
               <li class="pagination-item pagination-item-current">
@@ -205,39 +215,45 @@
       </div>
      </section>
     </main>
-    <footer class="main-footer">
-      <p class="footer-contacts">
-        <a href="index.html" class="main-logo" aria-label="Device">
-          <img src="img/logo_down.png" width="163" height="36" alt="Device">
-        </a><br>
+    <div class="wrapper">
+      <footer class="main-footer container">
+        <p class="footer-contacts">
+          <a class="main-logo" aria-label="Device">
+            <img src="img/logo_down.png" width="163" height="36" alt="Device">
+          </a><br>
           г. Москва, ул. Строителей, 15
-      </p>
-      <div class="user-navigation user-navigation-footer">
-        <a href="client.html" class="client">Валентин Петухов</a>
-        <a href="index.html" class="logout-footer">Выйти</a>
-        <a href="compare.html" class="compare">Сравнить</a>
-        <a href="basket.html" class="basket">Корзина</a>
-      </div>
-      <section class="footer-servise">
-          <h2 class="visually-hidden">Сопутствующие услуги</h2>
-        <ul>
-          <li class="site-navigation-current"><a href="delivery.html" >Доставка</a></li>
-          <li class="site-navigation-current"><a href="guarantee.html">Гарантия</a></li>
-          <li class="site-navigation-current"><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </section>
-      <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
-      <div class="footer-social">
-        <ul>
-          <li><a href="#" class="social-button" aria-label="Мы в Facebook">Фейсбук</a></li>
-          <li><a href="#" class="social-button" aria-label="Мы в Instagram">Инстаграм</a></li>
-          <li><a href=# class="social-button" aria-label="Мы в Twitter">Твиттер</a></li>
-        </ul>
-      </div>
-      <p class="footer-copyright">
-        <b>Разработано:</b>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      </p>
-    </footer>
+        </p>
+        <div class="service-social">
+          <section class="footer-servise">
+            <h2 class="visually-hidden">Сопутствующие услуги</h2>
+            <ul>
+              <li class="site-navigation-current"><a href="delivery.html" >Доставка</a></li>
+              <li class="site-navigation-current"><a href="guarantee.html">Гарантия</a></li>
+              <li class="site-navigation-current"><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li><a href="#" class="social-button" aria-label="Мы в Facebook">Фейсбук</a></li>
+            <li><a href="#" class="social-button" aria-label="Мы в Instagram">Инстаграм</a></li>
+            <li><a href=# class="social-button" aria-label="Мы в Twitter">Твиттер</a></li>
+          </ul>
+        </div>
+        <div class="navigation-phone">
+          <div class="user-navigation user-navigation-footer">
+            <a href="client.html" class="client">Валентин Петухов</a>
+            <a href="index.html" class="logout-footer">Выйти</a>
+            <a href="compare.html" class="compare">Сравнить</a>
+            <a href="basket.html" class="basket">Корзина</a>
+          </div>
+          <p class=footer-phone>Тел.: +7 (495) 495-95-95</p>
+          <p class="footer-copyright">
+            <b>Разработано:</b>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy"></a>
+          </p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

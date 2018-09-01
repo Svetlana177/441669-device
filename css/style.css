@@ -1,7 +1,7 @@
 body{
   margin:0;
   padding:0;
-  font-family: "Gilroyextrabold", Candara, sans-serif;
+  font-family: "Gilroyextrabold", "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 30px;
   font-weight: 800;
@@ -13,6 +13,8 @@ body{
 .visually-hidden{
   color: white;
   opacity: 0;
+  line-height: 0px;
+  font-size: 0px;
 }
 
 a{
@@ -63,7 +65,7 @@ a{
 /*кнопка найти*/
  .search{
    background-color: #ffffff;
-   font-family: "Open Sans Light", Arial, sans-serif;
+   font-family: "Open Sans Light", Arial sans-serif;
    font-size:15px;
    font-weight: 300;
    line-height: 30px;
@@ -202,6 +204,8 @@ text-transform: uppercase;
 .catalog-item-image{
   opacity: 0.5;
   background-color: #f0c52e;
+  width: 160px;
+  min-height: 160px;
 }
 
 .catalog-item-image:hover{
@@ -228,7 +232,7 @@ line-height: 40px;
   color:#464646;
 }
 .features-line td{
-  font-family: "Gilroylight", Candara, sans-serif;
+  font-family: "Gilroylight", "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 36px;
   line-height: 48px;
@@ -324,7 +328,7 @@ line-height: 40px;
 }
 
 .about-us-description{
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans Light", Arial,  sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -425,7 +429,7 @@ opacity: 0.3;
 .write-us-form{
   background-color: #f2f2f2;
   border: none;
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans Light", Arial,  sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
@@ -476,7 +480,7 @@ opacity: 0.3;
 }
 
 .breadcrumbs a{
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans Light", Arial,  sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -513,7 +517,7 @@ opacity: 0.3;
 
 .sort-item-type,
 .sort-item-popular{
-  font-family: "Open Sans Regular", Arial, sans-serif;
+  font-family: "Open Sans Regular", Arial,  sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -554,7 +558,7 @@ opacity: 0.3;
 }
 
 .label-color{
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans Light", Arial,  sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 40px;
@@ -580,7 +584,7 @@ opacity: 0.3;
 }
 
 .products .products-item-price{
-  font-family: "Gilroylight", Candara, sans-serif;
+  font-family: "Gilroylight", "Open Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color:#464646;
@@ -593,7 +597,7 @@ opacity: 0.3;
   font-size: 16px;
   line-height: 24px;
   color: #2f2f2f;
-  font-family: "Gilroyextrabold", Candara, sans-serif;
+  font-family: "Gilroyextrabold", "Open Sans", Arial, sans-serif;
   font-weight: 800;
   background-color:#ebebeb;
 }
@@ -604,14 +608,14 @@ opacity: 0.3;
   background-color: #ebebeb;
 }
 
-/*как связать покой наведение предыдущее нажатие?*/
+/*как связать покой наведение предыдущее нажатие?F*/
 .gallery-button{
   background-color: #ebebeb;
   border: none;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  font-family: "Gilroyextrabold", Candara, sans-serif;
+  font-family: "Gilroyextrabold", "Open Sans", Arial, sans-serif;
   font-weight: 800;
 }
 
@@ -626,4 +630,152 @@ opacity: 0.3;
 
 .gallery-button-back:visited{
   opacity: 0.3;
+}
+
+/*СОЗДАНИЕ СЕТКИ ЛЕКЦИЯ 6*/
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-header{
+  margin-top: 40px;
+  position: relative;
+}
+
+.main-logo img{
+  width: 163px;
+  height: 36px;
+}
+
+.user-navigation,
+.main-navigation,
+.catalog-item-list{
+  margin: 0;
+  padding: 0;
+}
+
+.galery-content .slider-1{
+  width: 384px;
+  height: 486px;
+}
+
+.galery-content .slider-2{
+  width: 345px;
+  height: 485px;
+}
+
+.galery-content .slider-3{
+  width: 526px;
+  height: 334px;
+}
+.contacts-map{
+  width: 560px;
+  height: 222px;
+}
+
+.map-big{
+  width: 994px;
+  height: 593px;
+}
+/*Это слайдер+фото, верхний-нижний паддинг временный*/
+.index-columns{
+  padding: 10px 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 115px;
+}
+
+.features{
+  width: 500px;
+
+}
+
+/*Популярные товары:экшн камера и тп*/
+.catalog-item-list{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 185px;
+}
+
+.catalog-item li{
+  width: 160px;
+}
+
+/*Доставка, гарантия, кредит */
+.service{
+  width: 280px;
+}
+
+.service-width{
+  width: 464px;
+}
+
+.service-description{
+  padding: 60px 150px 20px 300px;
+}
+
+.service-service-description{
+  margin-bottom: 100px;
+}
+/*партнеры*/
+.partners{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Блок О нас-Контакты*/
+.about-us-contacts{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.about-us{
+  width: 461px;
+}
+
+.contacts{
+  width: 560px;
+}
+/*footer*/
+.wrapper{
+  width:100%;
+  background-color: #464646;
+}
+.main-footer{
+  padding-top:65px;
+  display: flex;
+}
+
+.footer-contacts{
+  width: 210px;
+}
+
+.navigation-phone{
+  width: 440px;
+  margin-left: auto;
+}
+
+.service-social{
+  width: 440px;
+}
+
+.products-list{
+  margin:0;
+  padding: 0;
+}
+
+
+/*Напишите нам*/
+.modal{
+  margin-top:124px;
+}
+.write-us-form{
+  width:360px;
+}
+
+.write-us-width{
+  width: 760px;
 }
