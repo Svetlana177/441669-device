@@ -852,16 +852,18 @@ opacity: 0.3;
   flex-wrap: wrap;
   width:500px;
   letter-spacing: 0.2em;
-  justify-content: space-between;
   position: relative;
 }
 .site-nav li{
 list-style: none;
-margin:0;
+
 padding:0;
 }
-.site-nave-delivery{
-  margin-right: 40px;
+.site-nav-delivery{
+margin-right: 29px;
+}
+.site-nav-garanty{
+  margin-right: 78px;
 }
 .main-navigation ul{
   margin: 0;
