@@ -791,7 +791,7 @@ opacity: 0.3;
 }
   .catalog-nav-block li
   {
-    display:none;
+  
     min-width: 100px;;
     list-style: none;
     margin: 0;
