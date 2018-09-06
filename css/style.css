@@ -273,6 +273,15 @@ text-transform: uppercase;
   opacity: 0.3;
 }
 
+.slider {
+  position: relative;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+
+}
 
 .slider-controls label {
   display: inline-block;
@@ -287,30 +296,114 @@ text-transform: uppercase;
   border-radius: 50%;
   cursor: pointer;
 }
-
+.site-wrapper{
+  transition: background-image 0.5s ease;
+}
 .slider-controls {
   position: absolute;
-  bottom: 22px;
-  right: 2px;
-  z-index: 20;
 
-  font-size: 0;
+  z-index: 20;
+  top:175px;
+  right: 340px;
+   font-size: 0;
 }
 
-.index-columns {
+.slide {
   display: none;
 }
 
-#product-1:checked ~ .slider #slide1,
-#product-2:checked ~ .slider #slide2,
-#product-3:checked ~ .slider #slide3 {
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
   display: block;
 }
-#product-1:checked ~ .slider label[for="product-1"],
-#product-2:checked ~ .slider label[for="product-2"],
-#product-3:checked ~ .slider label[for="product-3"] {
-  background-color: #ffffff;
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+  background-color: #000000;
 }
+
+
+#product-1:checked ~ .site-wrapper {
+
+  background-image: url("../img/slider-1.png");
+  background-repeat: no-repeat;
+  background-position:98px -80px;
+  }
+
+#product-2:checked ~ .site-wrapper {
+  background-image: url("../img/slider-2.png");
+  background-repeat: no-repeat;
+  background-position:98px -80px;
+}
+
+#product-3:checked ~ .site-wrapper {
+  background-image: url("../img/slider-3.png");
+  background-repeat: no-repeat;
+  background-position:98px -80px;
+
+}
+
+.features-table{
+  margin-top: 75px;
+}
+
+.features-table{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.features{
+  position: relative;
+  z-index: 1;
+  bottom:72px;
+  left: 601px;
+  }
+
+.features::before{
+  content: "";
+
+  position: absolute;
+  width: 100px;
+  height: 6px;
+  background-color: #ffffff;
+  z-index: 2;
+  top:-41px;
+  left: 1px;
+
+}
+.features-number{
+  font-size: 179px;
+  line-height: 179px;
+  letter-spacing: 0.01em;
+  position: absolute;
+  top:-93px;
+  left:329px;
+  color:#ffffff;
+}
+
+.features-number-02{
+  font-size: 179px;
+  line-height: 179px;
+  letter-spacing: 0.01em;
+  position: absolute;
+  top:-93px;
+  left:329px;
+  color:#ffffff;
+}
+
+
+.features-number-03{
+  font-size: 179px;
+  line-height: 179px;
+  letter-spacing: 0.01em;
+  position: absolute;
+  top:-93px;
+  left:329px;
+  color:#ffffff;
+}
+
+
 
 /*совмещенный слайдер гарантия-доставка-кредит с описанием, доделать*/
 .service{
@@ -384,8 +477,7 @@ line-height: 40px;
   background-color: #e5e5e5;
 }
 
-.service-item,
-.slider-features{
+.service-item{
   list-style: none;
 }
 
@@ -1117,7 +1209,8 @@ margin-right: 26px;
 
 .catalog-item-picture{
   order:1;
-}
+  margin:40px 20px;
+  }
 .catalog-item:nth-child(6n) {
   margin-right: 0;
 }
@@ -1359,44 +1452,4 @@ margin-right: 26px;
   top:210px;
   z-index: 1;
   left: 230px;
-}
-/*Это слайдер+фото, верхний-нижний паддинг временный*/
-.index-columns{
-  padding: 0 80px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 115px;
-}
-
-.features{
-  width: 500px;
-  position: relative;
-  z-index: 1;
-  top:70px;
-  right:-21px;
-  }*/
-
-.features::before{
-  content: "";
-
-  position: absolute;
-  width: 100px;
-  height: 6px;
-  background-color: #ffffff;
-  z-index: 2;
-  top:-41px;
-  left: 1px;
-
-}
-.features-number{
-  font-size: 179px;
-  line-height: 179px;
-  letter-spacing: 0.01em;
-  position: absolute;
-  top:-93px;
-  right: -15px;
-  color:#ffffff;
-}
-.slider{
-
 }
