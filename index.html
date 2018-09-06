@@ -29,20 +29,32 @@
             </div>
           </div>
           <div class="main-catalog">
+            <p class="catalog-product-nav">
+              <a href="catalog.html">Каталог товаров</a>
+            </p>
           <nav class="main-navigation">
             <ul class="catalog-nav">
-              <li>
-                <a class="catalog-product" href="catalog.html">Каталог товаров</a>
+              <li class="catalog-group">
                 <ul class="catalog-nav-block">
                   <li class="first-column"><a href="catalog-item.html">Виртуальная реальность</a></li>
                   <li class="first-column"><a href="catalog-item.html">Моноподы для селфи</a></li>
                   <li class="first-column"><a href="catalog-item.html">Экшн-камеры</a></li>
+                </ul>
+              </li>
+              <li class="catalog-group">
+                <ul>
                   <li><a href="catalog-item.html">Фитнес-браслеты</a></li>
                   <li><a href="catalog-item.html">Умные часы</a></li>
+                </ul>
+              </li>
+              <li class="catalog-group">
+                <ul>
                   <li><a href="catalog-item.html">Квадрокоптеры</a></li>
                 </ul>
               </li>
             </ul>
+          </nav>
+          <nav >
             <ul class="site-nav">
               <li class="site-nav-delivery"><a href="delivery.html">Доставка</a></li>
               <li class="site-nav-garanty"><a href="guarantee.html">Гарантия</a></li>
@@ -55,7 +67,104 @@
     </header>
     <main class="container">
       <div class="container-min">
-        <div class="index-columns">
+
+
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  <div class="site-wrapper">
+    <div class="container">
+      <header class="main-header"></header>
+
+
+
+      <section class="slider">
+        <div class="slider-controls">
+          <label for="product-1">Первый</label>
+          <label for="product-2">Второй</label>
+          <label for="product-3">Третий</label>
+        </div>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+
+        <ul class="slider-list ">
+          <li class="slider-item slide features" id="slide1">
+            <span class="features-number">01</span>
+            <h2>
+              Делай селфи,<br>
+              как Бен Стиллер!
+            </h2>
+            <p class="description-common">Самая длинная палка селфи доступна в нашем магазине</p>
+            <p class="description-common">Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <table class="features-table">
+              <tr class="features-line">
+                <th>Длина палки</th>
+                <th>Вес палки</th>
+                <th>Материал</th>
+              </tr>
+              <tr class="features-line">
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+            </table>
+            <a href="catalog.html" class="features-details">Подробнее</a>
+        </li>
+
+          <li class="slider-item slide" id="slide2">
+            <span class="features-number-02">02</span>
+                <h2>
+                  Худеем<br>
+                  правильно!
+                </h2>
+                <p class="description-common">
+                  Мотивирующие фитнесc-браслеты помогут найти в себе силы<br>
+                  не пропускать занятия и соблюдать диету.
+                </p>
+                <a href="catalog.html" class="about-us-details features-details">Подробнее</a>
+                  <table class="features-table">
+                  <tr class="features-line">
+                    <th>Без поздарядки</th>
+                  </tr>
+                  <tr class="features-line">
+                    <td> 48 часов</td>
+                  </tr>
+                </table>
+            </li>
+
+            <li class="slider-item slide" id="slide3">
+              <h2>
+                Порхает как бабочка,<br>
+                жалит, как пчела!
+              </h2>
+              <p class="description-common">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                мощным лазером, замаскированным под стандартную камеру.
+              </p>
+              <a href="catalog.html" class="features-details">Подробнее</a>
+
+                <table class="features-table">
+                  <tr class="features-line">
+                    <th>Дальность полета</th>
+                    <th>Радиус поражения</th>
+                  </tr>
+                  <tr class="features-line">
+                    <td> 800 метров</td>
+                    <td> 50 метрв</td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+
+
+      <!--<div class="slider">
+
+
+        <div class="index-columns" id="slide1">
           <section class="gallery">
             <figure class="galery-content-1">
               <h2 class="visually-hidden">Фото товара</h2>
@@ -64,16 +173,15 @@
               </a>
             </figure>
           </section>
-          <section class="features">
-            <h2>
-              Делай селфи,<br>
-              как Бен Стиллер!
-            </h2>
-            <p class="description-common">Самая длинная палка селфи доступна в нашем магазине</p>
-            <p class="description-common">Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+
+
+
+
+
              <!--связать форму со слайдами-->
-            <fieldset>
-              <legend> <a href="catalog.html" class="features-details">Подробнее</a></legend>
+
+
+            <!--<fieldset>
               <ul class="slider-features">
                 <li class="slide-radio">
                   <input class="filter-input filter-input-radio" type="radio" name="sliders" value="first-slide" checked id="first-slide">
@@ -89,20 +197,39 @@
                 </li>
               </ul>
             </fieldset>
-            <table class="features-table">
-              <tr class="features-line">
-                <th>Длина палки</th>
-                <th>Вес палки</th>
-                <th>Материал</th>
-              </tr>
-              <tr class="features-line">
-                <td>8,5 м</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
-              </tr>
-            </table>
-          </section>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <section class="catalog">
           <h2 class="visually-hidden">Каталог товаров</h2>
           <ul class="catalog-item-list">
@@ -278,70 +405,7 @@
           </div>
       </footer>
     </div>
-  <div class="container">
-    <div class="container-min">
-      <div class="index-columns">
-        <section class="gallery">
-          <h2 class="visually-hidden">Фото товара</h2>
-          <figure class="galery-content">
-            <a href="#" aria-label="Фитнес-браслет">
-              <img class="slider-2" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-            </a>
-          </figure>
-        </section>
-        <section class="features">
-          <h2>
-            Худеем<br>
-            правильно!
-          </h2>
-          <p class="description-common">
-            Мотивирующие фитнесc-браслеты помогут найти в себе силы<br>
-            не пропускать занятия и соблюдать диету.
-          </p>
-          <a href="catalog.html" class="about-us-details features-details">Подробнее</a>
-          <!-- Здесь будет форма-->
-          <table class="features-table">
-            <tr class="features-line">
-              <th>Без поздарядки</th>
-            </tr>
-            <tr class="features-line">
-              <td> 48 часов</td>
-            </tr>
-          </table>
-        </section>
-      </div>
-      <div class="index-columns">
-        <section class="gallery">
-          <figure class="galery-content">
-            <h2 class="visually-hidden">Фото товара</h2>
-            <a href="#" aria-label="Квадракоптер">
-              <img class="slider-3" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-            </a>
-          </figure>
-        </section>
-        <section class="features">
-          <h2>
-            Порхает как бабочка,<br>
-            жалит, как пчела!
-          </h2>
-          <p class="description-common">
-            Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-            мощным лазером, замаскированным под стандартную камеру.
-          </p>
-          <a href="catalog.html" class="features-details">Подробнее</a>
-          <!-- Здесь будет форма-->
-            <table class="features-table">
-              <tr class="features-line">
-                <th>Дальность полета</th>
-                <th>Радиус поражения</th>
-              </tr>
-              <tr class="features-line">
-                <td> 800 метров</td>
-                <td> 50 метрв</td>
-              </tr>
-            </table>
-          </section>
-        </div>
+
         <section class="modal modal-map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <p>

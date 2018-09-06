@@ -3,7 +3,7 @@
   font-family: "Gilroyextrabold";
   font-style: extra-bold;
   font-weight: 800;
-  src: url(fonts/gilroy/Gilroyextrabold.ttf); /* Путь к файлу со шрифтом */
+  src: url('../fonts/gilroy/Gilroyextrabold.ttf'); /* Путь к файлу со шрифтом */
   }
 
 /* "Gilroylight - cyrillic_latin */
@@ -11,7 +11,7 @@
   font-family: "Gilroylight";
   font-style: light;
   font-weight: 300;
-  src: url(fonts/gilroy/Gilroylight.ttf); /* Путь к файлу со шрифтом */
+  src: url('../fonts/gilroy/Gilroylight.ttf'); /* Путь к файлу со шрифтом */
   }
 
 body{
@@ -62,6 +62,7 @@ input[type="radio"].visually-hidden {
   font-size:15px;
   font-weight: 300;
   line-height: 30px;
+  letter-spacing: 0.01em;
   vertical-align: middle;
   border: none;
   outline:1px solid #f7e296;
@@ -123,7 +124,7 @@ input[type="radio"].visually-hidden {
 
   }
 
-/*взаимосвязь кнопки и найти
+/*взаимосвязь кнопки и найти*/
 input:focus+button{
   display: block;
   background-color: red;
@@ -132,7 +133,7 @@ input:focus+button{
   font-size:15px;
   font-weight: 300;
   line-height: 30px;
-  }*/
+  }
 
 .user-navigation-color{
   background-color: #f7e296;
@@ -173,7 +174,6 @@ text-transform: uppercase;
 }
 
 .catalog-nav{
-  width:300px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -182,7 +182,7 @@ text-transform: uppercase;
   font-family: "Gilroyextrabold", "Open Sans", Arial, sans-serif;
   font-weight: 800;
   letter-spacing: 0.2em;
-  position: relative;
+
 }
 
 
@@ -200,6 +200,7 @@ text-transform: uppercase;
   line-height: 56px;
   letter-spacing: 0.01em;
   margin:0;
+  margin-bottom: 20px;
 }
 
 /*описание шрифт open suns light*/
@@ -209,6 +210,10 @@ text-transform: uppercase;
   font-weight: 300;
   line-height: 30px;
   color:#464646;
+  letter-spacing: 0.01em;
+  padding:0;
+  margin:0;
+
 }
 
 .filter fieldset,
@@ -218,10 +223,41 @@ text-transform: uppercase;
 
 /*ссылки Подробнее, Подробнее о нас, Напишите нам*/
 .features-details{
-  background-color: #f0c52e;
+  display: inline;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none;
+  border: none;
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
+  position: relative;
+  top:51px;
+  left:43px;
+  z-index: 2;
+
+  cursor:pointer;
+}
+
+.features-details::after {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: -42px;
+  width: 218px;
+  height: 10px;
+
+  background-color: #f0c52e;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
+  z-index: -1;
+  }
+.features-details:hover::after{
+  height: 100%;
+  top:0;
 }
 
 /*сделать*/
@@ -235,6 +271,45 @@ text-transform: uppercase;
 .service-item-middle:active,
 .about-us-detail:active{
   opacity: 0.3;
+}
+
+
+.slider-controls label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 20px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 22px;
+  right: 2px;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.index-columns {
+  display: none;
+}
+
+#product-1:checked ~ .slider #slide1,
+#product-2:checked ~ .slider #slide2,
+#product-3:checked ~ .slider #slide3 {
+  display: block;
+}
+#product-1:checked ~ .slider label[for="product-1"],
+#product-2:checked ~ .slider label[for="product-2"],
+#product-3:checked ~ .slider label[for="product-3"] {
+  background-color: #ffffff;
 }
 
 /*совмещенный слайдер гарантия-доставка-кредит с описанием, доделать*/
@@ -752,14 +827,28 @@ opacity: 0.3;
 
 .header-search{
   width:440px;
-  margin: 0;
-  padding: 0;
+  padding-left:39px;
+  position: relative;
 }
 
+.header-search::before {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
+  }
 
 .user-navigation-user{
-  margin-top:44px;
-  margin-bottom: 35px;
+  margin-top:43px;
+  margin-bottom: 37px;
 }
 
 .user-navigation-user{
@@ -768,79 +857,71 @@ opacity: 0.3;
 }
 
 .main-navigation{
+  display: none;
+  position: absolute;
+  }
+
+.main-catalog{
+  padding-bottom: 102px;
+}
+ .catalog-product-nav{
+   font-size:18px;
+   line-height: 24px;
+   letter-spacing: 0.2em;
+   text-transform: uppercase;
+   margin:  0;
+   position: relative;
+   }
+
+   .catalog-product-nav::after {
+     content: "";
+
+     position: absolute;
+     top: 4px;
+     left: 231px;
+     width: 37px;
+     height: 30px;
+
+     background-image: url("../img/plus.svg");
+     background-repeat: no-repeat;
+     background-position: 0 0;
+     opacity: 1;
+     }
+
+ .catalog-nav ul{
+   margin:0;
+   padding: 0;
+   list-style: none;
+   font-family: "Open Sans Light", Arial, sans-serif;
+   font-size:15px;
+   font-weight: 300;
+   line-height: 36px;
+   letter-spacing: 0.01em;
+  text-transform: none;
+ }
+ .catalog-product-nav:hover+ .main-navigation,
+ .catalog-product-nav:active+ .main-navigation,
+ .catalog-product-nav:focus+ .main-navigation{
+    display: block;
+}
+ .first-column:hover,
+ .first-column:active,
+ .first-column:focus{
+     display: block;
+ }
+
+
+
+
+.catalog-nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 168px;
-    }
-
-
-.catalog-nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    width: 551px;
-    flex-direction: column;
-    min-height:300px;
-    padding: 0;
-  }
-
-
-.catalog-nav-block{
-  width: 100%;
-  height: 100%;
-}
-  .catalog-nav-block li
-  {
-  
-    min-width: 100px;;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    min-height: 12px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding: 5px;
-    padding-left: 55px;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: space-around;
-    flex-direction: row;
-  }
-
-.catalog-nav-block{
-    position: absolute;
-    top:40px;
-    z-index: 2;
-    background-color: #f7e296;
-  }
-
-.catalog-nav ul{
-  margin:0;
-  padding: 0;
-  list-style: none;
-  font-family: "Open Sans Light", Arial, sans-serif;
-  font-size:15px;
-  font-weight: 300;
-  line-height: 36px;
-  letter-spacing: 0.01em;
+  width: 550px;
 }
 
-.catalog-nav-block{
-  font-family: "Open Sans Light", Arial, sans-serif;
-  font-size:15px;
-  font-weight: 300;
-  line-height: 36px;
-  text-transform: none;
-  display:none;
+.catalog-group {
+  width: 33%;
 }
-
-.catalog-nav > .catalog-nav-block:hover{
-  display: block;
-}
-.main-navigation li:hover .catalog-nav-block{
-  display: block;
-}
-
 
 .user-navigation{
   display: flex;
@@ -850,23 +931,27 @@ opacity: 0.3;
 }
 
 .site-nav{
-  display: flex;
-  flex-wrap: wrap;
-  width:500px;
   letter-spacing: 0.2em;
+  line-height: 24px;
   position: relative;
+  text-transform: uppercase;
+  top:-60px;
+  left: 501px;
 }
+
 .site-nav li{
 list-style: none;
-
 padding:0;
 }
+
 .site-nav-delivery{
-margin-right: 29px;
+margin-right: 26px;
 }
+
 .site-nav-garanty{
-  margin-right: 78px;
+  margin-right: 100px;
 }
+
 .main-navigation ul{
   margin: 0;
   padding: 0;
@@ -884,8 +969,9 @@ margin-right: 29px;
 /*войти*/
 .user-navigation .login-link{
   padding-right: 210px;
-  padding-left: 28px;
+  padding-left: 27px;
   position: relative;
+  top:1px;
 }
 
 .login-link::before {
@@ -914,7 +1000,8 @@ margin-right: 29px;
 /*сравнить*/
 .user-navigation .compare{
   padding-right: 34px;
-  padding-left: 27px;
+  padding-left: 28px;
+  top:1px;
   position: relative;
 }
 
@@ -923,7 +1010,7 @@ margin-right: 29px;
 
   position: absolute;
   top: 10px;
-  left: 7px;
+  left: 8px;
   width: 13px;
   height: 13px;
 
@@ -945,6 +1032,7 @@ margin-right: 29px;
 .user-navigation .basket{
   margin-left:auto;
   position: relative;
+  padding-right: 1px;
 }
 
 .basket::before {
@@ -952,7 +1040,7 @@ margin-right: 29px;
 
   position: absolute;
   top: 8px;
-  left: -24px;
+  left: -23px;
   width: 13px;
   height: 13px;
 
@@ -987,14 +1075,7 @@ margin-right: 29px;
 }
 
 
-/*слайдеры*/
 
-.galery-content-1{
-  position: absolute;
-  top:210px;
-  z-index: 1;
-  left: 230px;
-}
 .galery-content .slider-1{
   width: 384px;
   height: 486px;
@@ -1018,34 +1099,7 @@ margin-right: 29px;
   width: 994px;
   height: 593px;
 }
-/*Это слайдер+фото, верхний-нижний паддинг временный*/
-.index-columns{
-  padding: 0 80px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 115px;
-}
 
-.features{
-  width: 500px;
-  position: relative;
-  z-index: 1;
-  top:-38px;
-  right:-19px;
-  }
-
-.features::before{
-  content: "";
-
-  position: absolute;
-  width: 100px;
-  height: 6px;
-  background-color: red;
-  z-index: 2;
-  top:-41px;
-  left: 3px;
-
-}
 /*Популярные товары:экшн камера и тп*/
 .catalog{
   display: flex;
@@ -1296,4 +1350,53 @@ margin-right: 29px;
   display: inline-block;
   vertical-align: baseline;
   width: 39px;
+}
+
+/*слайдеры*/
+
+.galery-content-1{
+  position: absolute;
+  top:210px;
+  z-index: 1;
+  left: 230px;
+}
+/*Это слайдер+фото, верхний-нижний паддинг временный*/
+.index-columns{
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 115px;
+}
+
+.features{
+  width: 500px;
+  position: relative;
+  z-index: 1;
+  top:70px;
+  right:-21px;
+  }*/
+
+.features::before{
+  content: "";
+
+  position: absolute;
+  width: 100px;
+  height: 6px;
+  background-color: #ffffff;
+  z-index: 2;
+  top:-41px;
+  left: 1px;
+
+}
+.features-number{
+  font-size: 179px;
+  line-height: 179px;
+  letter-spacing: 0.01em;
+  position: absolute;
+  top:-93px;
+  right: -15px;
+  color:#ffffff;
+}
+.slider{
+
 }
