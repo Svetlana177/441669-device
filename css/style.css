@@ -520,14 +520,21 @@ text-transform: uppercase;
 }
 
 /*Загаловки Доставка, Гарантия, Кредит,  О нас, Контакты,Моноподы для селфи*/
+/*Каталог товаров*/
 .title-common{
   font-size: 47px;
-  line-height: 48px;
+  line-height: autoж
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+/*Моноподы для селфи*/
+.title-common-1{
+  font-size: 47px;
+  line-height: 48зчж
   font-weight: 800;
   letter-spacing: 0.01em;
 }
 
-/*Каталог товаров*/
 
 /*текст*/
 .catalog-item{
@@ -1105,6 +1112,10 @@ opacity: 0.3;
 .for-logo{
   position: relative;
   margin-bottom: 60px;
+}
+.for-logo-1{
+  position: relative;
+  margin-bottom: 70px;
 }
 /*шапка сайта*/
 .user-navigation-color{
@@ -1957,8 +1968,13 @@ transition: all .2s linear;
 /*каталог*/
 .title-common{
   margin: 0;
-  margin-left: 60px;
   margin-bottom: 33px;
+  padding: 0;
+}
+.title-common-1{
+  margin: 0;
+  margin-left:60px;
+  margin-bottom: 28px;
   padding: 0;
 }
 
@@ -1991,7 +2007,8 @@ transition: all .2s linear;
 
 
 .sort-item h3{
-  float:left;
+  display: inline-block;
+  vertical-align: baseline;
   width: 160px;
   margin:0;
   padding: 23px 0;
