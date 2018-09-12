@@ -74,7 +74,7 @@
           <li class=" breadcrumbs-current"><a>Моноподы для селфи</a></li>
         </ul>
       </div>
-        <!--сделать еще минимальную ширину  -->
+
       <div class="filter-sort clearfix">
         <div class="filter-sort-name clearfix">
           <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -83,11 +83,10 @@
         <section class="sort-item">
           <h2 class="visually-hidden">Сортировка товара</h2>
             <h3>Сортировка:</h3>
-            <div class="sort-item-float">
+            <div class="sort-item-float clearfix">
               <a class="sort-item-price price-checked" href="#">По цене</a>
               <a class="sort-item-type" href="#">По типу</a>
               <a class="sort-item-popular" href="#">По популярности</a>
-              <!--Здесь в CSS будут псевдоэлементы: стрелка вверх и вниз-->
             </div>
           </section>
         </div>
@@ -165,6 +164,8 @@
                   <a href="products-item.html" aria-label="Любительская селфи-палка">
                     <img class="products-item-picture" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   </a>
+                  <a class="in-basket in-basket-button" href="#">В корзину</a>
+                  <a class="to-compare" href="#">Добавить к сравнению</a>
                 </p>
                 <h3 class="products-header">
                   <a href="products-item.html">
@@ -174,16 +175,14 @@
                 <p class="products-item-price">
                   <b>500 руб.</b>
                 </p>
-                <div class="basket-compare">
-                  <a class="in-basket in-basket-button" href="#">В корзину</a>
-                  <a class="to-compare" href="#">Добавить к сравнению</a>
-                </div>
               </li>
               <li class="products-item clearfix">
                 <p class="products-item-image">
                     <a href="products-item.html" aria-label="Профессиональная селфи-палка">
-                    <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                    <img class="products-item-picture" src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                   </a>
+                  <a class="in-basket in-basket-button" href="#">В корзину</a>
+                  <a class="to-compare" href="#">Добавить к сравнению</a>
                 </p>
                 <h3 class="products-header">
                   <a href="products-item.html">
@@ -198,10 +197,12 @@
                 </p>
               </li>
               <li class="products-item clearfix">
-                <p class="products-item-photo">
+                <p class="products-item-image products-item-photo">
                   <a href="products-item.html" aria-label="Непотопляемая селфи-палка">
-                    <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                    <img class="products-item-picture" src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                   </a>
+                  <a class="in-basket in-basket-button" href="#">В корзину</a>
+                  <a class="to-compare" href="#">Добавить к сравнению</a>
                 </p>
                 <h3 class="products-header">
                   <a href="products-item.html">
@@ -213,10 +214,12 @@
                 </p>
               </li>
               <li class="products-item clearfix">
-                <p class="products-item-photo">
+                <p class="products-item-image products-item-photo">
                   <a href="products-item.html" aria-label="Селфи-палка следуй за мной">
-                    <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка следуй за мной">
+                    <img class="products-item-picture" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка следуй за мной">
                   </a>
+                  <a class="in-basket in-basket-button" href="#">В корзину</a>
+                  <a class="to-compare" href="#">Добавить к сравнению</a>
                 </p>
                 <h3 class="products-header">
                   <a href="products-item.html">
@@ -251,15 +254,23 @@
       </div>
     </main>
     <div class="wrapper">
-      <footer class="main-footer container">
-        <p class="footer-contacts">
-          <a class="main-logo" aria-label="Device">
-            <img src="img/logo_down.png" width="163" height="36" alt="Device">
-          </a><br>
-          г. Москва, ул. Строителей, 15
-        </p>
-        <div>
+      <footer class="container-min main-footer">
+        <div class="contacts-user">
+          <p class="footer-contacts">
+            <a class="main-logo" aria-label="Device">
+              <img src="img/logo_down.png" width="163" height="36" alt="Device">
+            </a>
+          </p>
+          <div class="user-navigation-footer">
+            <a href="client.html" class="client-footer">Валентин Петухов</a>
+            <a href="logout.html" class="logout-footer">Выйти</a>
+            <a href="compare.html" class="compare-footer">Сравнить</a>
+            <a href="basket.html" class="basket-footer">Корзина</a>
+          </div>
+        </div>
+        <div class="service-footer">
           <div class="service-social">
+              <p class="address">г. Москва, ул. Строителей, 15</p>
             <section class="footer-servise">
               <h2 class="visually-hidden">Сопутствующие услуги</h2>
               <ul>
@@ -268,28 +279,20 @@
                 <li class="site-navigation-current"><a href="contacts.html">Контакты</a></li>
               </ul>
             </section>
+            <p class="navigation-phone">Тел.: +7 (495) 495-95-95</p>
           </div>
           <div class="footer-social">
             <ul>
-              <li><a href="#" class="social-button" aria-label="Мы в Facebook">Фейсбук</a></li>
-              <li><a href="#" class="social-button" aria-label="Мы в Instagram">Инстаграм</a></li>
-              <li><a href=# class="social-button" aria-label="Мы в Twitter">Твиттер</a></li>
+              <li><a href="#" class="social-button social-button-fb" aria-label="Мы в Facebook"><span class="visually-hidden" >Фейсбук</span></a></li>
+              <li><a href="#" class="social-button social-button-inst" aria-label="Мы в Instagram"><span class="visually-hidden">Инстаграм</span></a></li>
+              <li><a href=# class="social-button social-button-twit" aria-label="Мы в Twitter"><span class="visually-hidden">Твиттер</span></a></li>
             </ul>
           </div>
         </div>
-        <div class="navigation-phone">
-          <div class="user-navigation user-navigation-footer">
-            <a href="client.html" class="client-footer">Валентин Петухов</a>
-            <a href="index.html" class="logout-footer">Выйти</a>
-            <a href="compare.html" class="compare-footer">Сравнить</a>
-            <a href="basket.html" class="basket-footer">Корзина</a>
-          </div>
-          <p class=footer-phone>Тел.: +7 (495) 495-95-95</p>
-          <p class="footer-copyright">
-            <b>Разработано:</b>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy"></a>
-          </p>
-        </div>
+        <p class="footer-copyright">
+          <b class="visually-hidden">Разработано:</b>
+          <a class="htmlacademy-href" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy"></a>
+        </p>
       </footer>
     </div>
   </body>
