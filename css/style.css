@@ -956,8 +956,7 @@ opacity: 0.3;
   margin-top:32px;
 }
 .sort-item-type,
-.sort-item-popular,
-.sort-item-price {
+.sort-item-popular {
   font-family: "Open Sans Regular", Arial,  sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -1999,18 +1998,45 @@ transition: all .2s linear;
   padding-left:73px;
   padding-right: 40px;
 }
-.sort-item-float{
-  float:left;
-  width: 560px;
+.sort-item-sort{
+  display: inline-block;
+  vertical-align: baseline;
   padding: 16px 0;
+}
+
+  .sort-item-price{
+    position: relative;
+
+    padding-right: 15px;
+  }
+
+  .sort-item-price::before{
+    content: "";
+
+    position: absolute;
+    left: 549px;
+    top: 5px;
+    width: 11px;
+    height: 10px;
+
+    background-image: url("../img/icon-down-dir.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+      }
+
+.sort-item-type{
+  position: relative;
+
+  padding-left: 10px;
+  padding-right: 20px;
 }
 
 .sort-item-type::before{
   content: "";
 
   position: absolute;
-  right: 202px;
-  bottom: 25px;
+  left: 447px;
+  top: 5px;
   width: 11px;
   height: 10px;
 
@@ -2019,30 +2045,6 @@ transition: all .2s linear;
   background-position: 0 0;
   }
 
-  .sort-item-price::before{
-    content: "";
-
-    position: absolute;
-    right: 172px;
-    bottom: 24px;
-    width: 11px;
-    height: 10px;
-
-    background-image: url("../img/icon-down-dir.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    }
-}
-.sort-item-price{
-  width: 60px;
-  padding-right: 15px;
-}
-
-.sort-item-type{
-  width: 60px;
-  padding-left: 10px;
-  padding-right: 20px;
-}
 .filter-sort{
   width: 100%;
   background-color: #ebebeb;
