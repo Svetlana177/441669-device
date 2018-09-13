@@ -258,6 +258,9 @@ text-transform: uppercase;
   cursor:pointer;
 }
 
+.features-details:active{
+  color: rgba(0,0,0,0.3);
+}
 .features-details::after {
   content: "";
 
@@ -273,6 +276,7 @@ text-transform: uppercase;
   opacity: 1;
   z-index: -1;
   }
+
 .features-details:hover::after{
   height: 100%;
   top:0;
@@ -346,6 +350,19 @@ text-transform: uppercase;
   opacity: 1;
   z-index: -1;
   }
+  .features-details-us:active,
+  .features-details-write-us:active{
+    color: rgba(0,0,0,0.3);
+  }
+.features-details-us:hover::after,
+.features-details-write-us:hover::after{
+  height: 100%;
+  top:0;
+}
+
+
+
+
 
 .slider {
   position: relative;
@@ -840,6 +857,13 @@ opacity: 0.3;
     left: -2px;
   }
 
+  .write-us-send:active{
+    color: rgba(0,0,0,0.3);
+  }
+.write-us-send:hover::after{
+  height: 100%;
+  top:0;
+}
 /*Следующая страница - catalog*/
 
 /*кнопка выйти*/
@@ -2007,8 +2031,8 @@ transition: all .2s linear;
 
 
 .sort-item h3{
-  display: inline-block;
-  vertical-align: baseline;
+display: inline-block;
+vertical-align: middle;
   width: 160px;
   margin:0;
   padding: 23px 0;
