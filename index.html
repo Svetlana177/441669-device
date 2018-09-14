@@ -366,29 +366,31 @@
         <section class="modal modal-map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <p>
-            <img class="map-big" src="img/map-big.jpg" width="994" height="593" alt="Офис компании по адресу: г. Москва, ул. Строителей, 15">
+            <img class="map-big" src="img/map-big.png" width="960" height="559" alt="Офис компании по адресу: г. Москва, ул. Строителей, 15">
           </p>
           <button class="modal-close" type="button">Закрыть</button>
         </section>
       </div>
     </div>
 
-    <section class="modal modal-write-us container">
+    <section class="modal modal-write-us">
       <h2 class="visually-hidden">Обратная связь</h2>
       <p class="visually-hidden">Напишите нам</p>
       <form class="write-us-form-1" action="https://echo.htmlacademy.ru" method="post">
+        <div class="name-email">
         <p class="modal-name">
           <label class="write-us-user-text" for="user-name">Ваше имя:</label><br>
-          <input type="text" class="write-us-form" id="user-name" name="name" placeholder="Имя Фамилия">
+          <input type="text" class="write-us-form" id="user-name" name="name" value placeholder="Имя Фамилия" required>
         </p>
-        <p>
+        <p class="modal-name">
           <label class="write-us-user-text" for="user-e-mail">Ваш e-mail:</label><br>
-          <input class="write-us-form" id="user-e-mail" type="email" name="email" placeholder="email@example.com">
+          <input class="write-us-form" id="user-e-mail" type="email" name="email" placeholder="email@example.com" required>
         </p>
+      </div>
         <label class="write-us-user-text" for="comment-field">Текст письма</label><br>
-        <textarea class="write-us-form write-us-width" name="comment" id="comment-field" rows="10" placeholder="В свободной форме"></textarea>
+        <textarea class="write-us-text" name="comment" id="comment-field" rows="10" placeholder="В свободной форме" required></textarea>
         <p>
-          <input class="write-us-send" type="submit" value="Отправить" aria-label="Отправить">
+          <button class="write-us-send-footer" type="submit" value="Отправить" aria-label="Отправить">
         </p>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
