@@ -293,7 +293,7 @@ text-transform: uppercase;
   text-transform: uppercase;
   position: relative;
   top:47px;
-  left:24px;
+  left:13px;
   z-index: 2;
   padding: 10px 10px;
   cursor:pointer;
@@ -304,7 +304,7 @@ text-transform: uppercase;
 
   position: absolute;
   top: 17px;
-  left: -23px;
+  left: -12px;
   width: 260px;
   height: 7px;
   background-color: #f0c52e;
@@ -327,7 +327,7 @@ text-transform: uppercase;
   text-transform: uppercase;
   position: relative;
   top:47px;
-  left:41px;
+  left:31px;
   z-index: 2;
   padding: 10px 10px;
 
@@ -339,7 +339,7 @@ text-transform: uppercase;
 
   position: absolute;
   top: 17px;
-  left: -41px;
+  left: -30px;
   width: 260px;
   height: 7px;
   background-color: #f0c52e;
@@ -530,7 +530,8 @@ text-transform: uppercase;
 
 /*Загаловки Доставка, Гарантия, Кредит,  О нас, Контакты,Моноподы для селфи*/
 /*Каталог товаров*/
-.title-common{
+.title-common,
+.about-us-title {
   font-size: 47px;
   font-weight: 800;
   letter-spacing: 0.01em;
@@ -970,6 +971,9 @@ opacity: 0.3;
 .products-header{
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  margin-top: 23px;
+  margin-bottom: 20px;
 }
 
 .products .products-item-price{
@@ -1312,11 +1316,11 @@ padding:0;
 
 .logout{
   position: relative;
-  left:48px;
+  left:32px;
 }
 .client{
   position: relative;
-  left:28px;
+  left:27px;
 }
 
 .client::before {
@@ -1499,23 +1503,37 @@ padding:0;
 }
 
 .slider-delivery{
+  margin: 0;
+  padding: 0;
   margin-top:81px;
   padding-left: 20px;
+  padding-bottom: 9px;
+  padding-top: 6px;
+  margin-bottom: 24px;
 }
 
 .slider-garanty{
+  margin: 0;
+  padding: 0;
   padding-left: 25px;
+  padding-bottom: 9px;
+  padding-top: 6px;
+  margin-bottom: 26px;
 }
 
 .slider-credit{
+  margin: 0;
+  padding: 0;
   padding-left: 38px;
+  padding-bottom: 9px;
+  padding-top: 6px;
 }
 
 .slider-controls-2 label::before {
   content: "";
 
   position: absolute;
-  top:17px;
+  top:13px;
   left:2px;
   width: 160px;
   height: 10px;
@@ -1562,7 +1580,7 @@ padding:0;
 .description-background-05::after{
   content: "";
   position: absolute;
-  right: -232px;
+  right: -253px;
   bottom: -6px;
   width: 171px;
   height: 194px;
@@ -1603,7 +1621,7 @@ padding:0;
 .partners{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 134px;
+  margin-bottom: 145px;
 }
 
 /*Блок О нас-Контакты*/
@@ -1624,7 +1642,7 @@ padding:0;
   height: 8px;
   background-color: #000000;
   z-index: 2;
-  top: -53px;
+  top: -62px;
 }
 
 .contacts{
@@ -1639,7 +1657,7 @@ padding:0;
   height: 8px;
   background-color: #000000;
   z-index: 2;
-  top: -53px;
+  top: -62px;
 }
 
 /*footer*/
@@ -1849,6 +1867,7 @@ top: 111px;
   margin:0;
   margin-left: auto;
   letter-spacing: 0;
+  padding-top: 6px;
 }
 
 .footer-copyright{
@@ -1882,7 +1901,14 @@ top: 111px;
 /*каталог*/
 .title-common{
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 39px;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.about-us-title{
+  margin: 0;
+  margin-bottom: 39px;
   padding: 0;
 }
 
@@ -2031,7 +2057,7 @@ vertical-align: middle;
   flex-wrap: wrap;
   margin:0;
   padding: 0;
-  margin-bottom: 36px;
+  margin-bottom: 14px;
 }
 
 .products-list li{
@@ -2057,15 +2083,18 @@ vertical-align: middle;
   display: flex;
   justify-content: space-between;
   width: 760px;
-  margin-left: 72px;
+  margin-left: 70px;
   margin-bottom: 80px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.gallery-button-back,
+.gallery-button-back{
+  margin-left:25px;
+}
+
 .gallery-button-next{
-  width: 133px;
+  margin-right: 18px;
 }
 
 .pagination-item {
@@ -2183,7 +2212,7 @@ cursor: pointer;
   width: 468px;
   box-sizing: border-box;
   background-color: #eeeeee;
-  padding-left: 200px;
+  padding-left: 198px;
   padding-top: 70px;
 }
 
@@ -2351,13 +2380,13 @@ cursor: pointer;
   position: relative;
   z-index: 1;
   background: none;
-  padding: 10px 10px;
+  padding: 3px 39px;
 }
 
 .write-us-send::after {
   content: "";
   position: absolute;
-  top: 19px;
+  top: 10px;
   width: 200px;
   height: 7px;
   background-color: #f0c52e;
@@ -2365,7 +2394,7 @@ cursor: pointer;
   background-position: 0 0;
   opacity: 1;
   z-index: -1;
-  left: -15px;
+  left: -1px;
   }
 
 .write-us-send:active{
