@@ -1,21 +1,32 @@
-/* "Gilroyextrabold - cyrillic_latin */
-@font-face {
-  font-family: "Gilroyextrabold";
-  font-weight: 800;
-  src: url('../fonts/gilroy/Gilroyextrabold.ttf'); /* Путь к файлу со шрифтом */
+
+  @font-face {
+    font-family: "Gilroy";
+    src:
+      local("Gilroy Light"),
+      local("Gilroy-Light"),
+      url("../fonts/Gilroylight.woff2") format('woff2'),
+      url("../fonts/Gilroylight.woff") format('woff');
+    font-weight: 300;
+    font-style: normal;
   }
 
-/* "Gilroylight - cyrillic_latin */
-@font-face {
-  font-family: "Gilroylight";
-  font-weight: 300;
-  src: url('../fonts/gilroy/Gilroylight.ttf'); /* Путь к файлу со шрифтом */
+  @font-face {
+    font-family: "Gilroy";
+    src:
+      local("Gilroy ExtraBold"),
+      local("Gilroy-ExtraBold"),
+      url("../fonts/Gilroyextrabold.woff2") format('woff2'),
+      url("../fonts/Gilroyextrabold.woff") format('woff');
+    font-weight: 800;
+    font-style: normal;
   }
+
+
 
 body{
   margin:0;
   padding:0;
-  font-family: "Gilroyextrabold", "Open Sans", Arial, sans-serif;
+  font-family: "Gilroy", "Open Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 800;
@@ -183,7 +194,7 @@ text-transform: uppercase;
   list-style: none;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Gilroyextrabold", "Open Sans", Arial, sans-serif;
+  font-family: "Gilroy", "Open Sans", Arial, sans-serif;
   font-weight: 800;
   letter-spacing: 0.2em;
 }
@@ -619,7 +630,7 @@ padding-left: 35px;
 }
 
 .features-line td{
-  font-family: "Gilroylight", "Open Sans", Arial, sans-serif;
+  font-family: "Gilroy", "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 36px;
   line-height: 48px;
@@ -1032,7 +1043,7 @@ margin-left: 60px;
 }
 
 .products .products-item-price{
-  font-family: "Gilroylight", "Open Sans", Arial, sans-serif;
+  font-family: "Gilroy", "Open Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color:#464646;
@@ -1062,7 +1073,7 @@ margin-left: 60px;
   line-height: 24px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  font-family: "Gilroyextrabold", "Open Sans", Arial, sans-serif;
+  font-family: "Gilroy", "Open Sans", Arial, sans-serif;
   font-weight: 800;
 }
 
@@ -2310,7 +2321,7 @@ cursor: pointer;
 
   background-color: #eeeeee;
 
-  font-family: "Gilroylight", "Open Sans", Arial, sans-serif;
+  font-family: "Gilroy", "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -2321,7 +2332,7 @@ cursor: pointer;
 .price-controls input {
   width: 35px;
   text-align:left;
-  font-family: "Gilroylight", "Open Sans", Arial, sans-serif;
+  font-family: "Gilroy", "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
