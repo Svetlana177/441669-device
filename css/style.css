@@ -351,9 +351,9 @@ text-transform: uppercase;
   z-index: -1;
 }
 
-  .features-details-us:active,
-  .features-details-write-us:active{
-    color: rgba(0,0,0,0.3);
+.features-details-us:active,
+.features-details-write-us:active{
+  color: rgba(0,0,0,0.3);
 }
 
 .features-details-us:hover::after,
@@ -375,6 +375,7 @@ text-transform: uppercase;
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 12px;
   height: 12px;
   margin-right: 20px;
@@ -436,11 +437,11 @@ text-transform: uppercase;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   position: absolute;
   top:323px;
   left:-5px;
@@ -575,11 +576,11 @@ text-transform: uppercase;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   margin:0;
   margin-bottom: 31px;
 }
@@ -657,13 +658,13 @@ padding-left: 35px;
 
 .partner-2{
   display: inline-block;
+  vertical-align: baseline;
   background-image: url("../img/logo-2.png");
   background-repeat: no-repeat;
   background-position: center;
   width:260px;
   min-height: 100px;
   opacity: 0.2;
-  vertical-align: baseline;
 }
 
 .partner-2:hover{
@@ -831,10 +832,10 @@ opacity: 0.3;
 display: -ms-flexbox;
 display: flex;
 -webkit-box-pack: start;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
+-ms-flex-pack: start;
+justify-content: flex-start;
 -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+flex-wrap: wrap;
 padding: 0;
 margin: 0;
 margin-bottom: 43px;
@@ -924,9 +925,39 @@ margin-left: 60px;
 .filter-cost-number{
   opacity: 0.2;
 }
+.catalog-picture-1{
+  width: 97px;
+  height: 55px;
+  margin-top:49px;
+}
 
-.popular-2{
-  margin-top:32px;
+.catalog-picture-2{
+  width: 86px;
+  height: 117px;
+  margin-top:36px;
+}
+.catalog-picture-3{
+  width: 71px;
+  height: 87px;
+  margin-top:36px;
+}
+
+.catalog-picture-4{
+  width: 107px;
+  height: 65px;
+  margin-top:47px;
+}
+
+.catalog-picture-5{
+  width: 56px;
+  height: 98px;
+  margin-top:31px;
+}
+
+.catalog-picture-6{
+  width: 132px;
+  height: 69px;
+  margin-top:46px;
 }
 
 .sort-item-type,
@@ -993,8 +1024,8 @@ margin-left: 60px;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 0;
   margin-top: 23px;
   margin-bottom: 20px;
@@ -1092,10 +1123,10 @@ margin-left: 60px;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-wrap:wrap;
-      flex-wrap:wrap;
+  flex-wrap:wrap;
 }
 
 .user-navigation-user{
@@ -1108,15 +1139,21 @@ margin-left: 60px;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .main-navigation{
   display: none;
   position: absolute;
+  padding-left: 67px;
+  left: -59px;
+  padding-bottom: 52px;
 }
 
+.navigation-index{
+  padding-right: 542px;
+}
 .main-catalog{
   padding-bottom: 102px;
 }
@@ -1220,10 +1257,10 @@ margin-left: 60px;
  display: -ms-flexbox;
  display: flex;
  -webkit-box-pack: justify;
-     -ms-flex-pack: justify;
-         justify-content: space-between;
+ -ms-flex-pack: justify;
+ justify-content: space-between;
  -ms-flex-wrap: wrap;
-     flex-wrap: wrap;
+ flex-wrap: wrap;
  width:500px;
  margin-top: 9px;
 }
@@ -1247,8 +1284,8 @@ margin-left: 60px;
   margin-bottom: -23px;
 }
 .site-nav li{
-list-style: none;
-padding:0;
+  list-style: none;
+  padding:0;
 }
 
 .site-nav-delivery{
@@ -1421,6 +1458,11 @@ padding:0;
 .main-header{
   margin-top: 40px;
 }
+.logo-top,
+.logo-down{
+  width:163px;
+  height:36px;
+}
 
 .main-logo-top{
   position: absolute;
@@ -1465,8 +1507,8 @@ padding:0;
 }
 
 .map-big{
-  width: 994px;
-  height: 593px;
+  width: 960px;
+  height: 559px;
 }
 
 /*Популярные товары:экшн камера и тп*/
@@ -1504,7 +1546,7 @@ padding:0;
  display: -ms-flexbox;
  display: flex;
  -ms-flex-wrap: wrap;
-     flex-wrap: wrap;
+ flex-wrap: wrap;
  padding: 0;
  margin: 0;
  list-style: none;
@@ -1532,7 +1574,7 @@ padding:0;
  display: flex;
  -webkit-box-orient: vertical;
  -webkit-box-direction: normal;
--ms-flex-direction: column;
+ -ms-flex-direction: column;
  flex-direction: column;
  border-right: 7px solid #000000;
 
@@ -1614,8 +1656,8 @@ padding:0;
  display: flex;
  -webkit-box-orient: vertical;
  -webkit-box-direction: normal;
--ms-flex-direction: column;
-  flex-direction: column;
+ -ms-flex-direction: column;
+ flex-direction: column;
  list-style:none;
  padding: 0;
  margin: 0;
@@ -2049,8 +2091,8 @@ top: 111px;
 }
 
 .sort-item h3{
-display: inline-block;
-vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
   width: 160px;
   margin:0;
   padding: 23px 0;
@@ -2263,6 +2305,7 @@ cursor: pointer;
 
 .price-controls label {
   display: inline-block;
+  vertical-align: baseline;
   width: 37%;
 
   background-color: #eeeeee;
