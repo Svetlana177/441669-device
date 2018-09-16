@@ -1,7 +1,6 @@
 /* "Gilroyextrabold - cyrillic_latin */
 @font-face {
   font-family: "Gilroyextrabold";
-  font-style: extra-bold;
   font-weight: 800;
   src: url('../fonts/gilroy/Gilroyextrabold.ttf'); /* Путь к файлу со шрифтом */
   }
@@ -9,7 +8,6 @@
 /* "Gilroylight - cyrillic_latin */
 @font-face {
   font-family: "Gilroylight";
-  font-style: light;
   font-weight: 300;
   src: url('../fonts/gilroy/Gilroylight.ttf'); /* Путь к файлу со шрифтом */
   }
@@ -236,6 +234,11 @@ text-transform: uppercase;
 }
 
 /*ссылки Подробнее*/
+
+.features{
+  width: 560px;
+}
+
 .features-details{
   display: inline;
   vertical-align: top;
@@ -248,7 +251,7 @@ text-transform: uppercase;
   text-transform: uppercase;
   position: relative;
   top:51px;
-  left:41px;
+  left:33px;
   z-index: 2;
   padding: 10px 10px;
   cursor:pointer;
@@ -262,7 +265,7 @@ text-transform: uppercase;
   content: "";
   position: absolute;
   top: 17px;
-  left: -40px;
+  left: -33px;
   width: 220px;
   height: 7px;
   background-color: #f0c52e;
@@ -487,7 +490,7 @@ text-transform: uppercase;
   letter-spacing: 0.01em;
   position: absolute;
   top:-92px;
-  left:326px;
+  left:328px;
   color:#ffffff;
   z-index: -1;
 }
@@ -1094,20 +1097,6 @@ opacity: 0.3;
  z-index: 10;
 }
 
-.catalog-product-nav::after {
-   content: "";
-
-   position: absolute;
-   top: 4px;
-   left: 231px;
-   width: 37px;
-   height: 30px;
-   background-image: url("../img/plus.svg");
-   background-repeat: no-repeat;
-   background-position: 0 0;
-   opacity: 1;
-}
-
 .catalog-nav ul{
   margin:0;
   padding: 0;
@@ -1137,6 +1126,23 @@ opacity: 0.3;
   padding-left: 58px;
   margin-top: 20px;
   padding-bottom: 33px;
+}
+.catalog-name{
+  padding-right: 40px;
+}
+
+.catalog-name::after {
+   content: "";
+
+   position: absolute;
+   top: 4px;
+   left: 231px;
+   width: 37px;
+   height: 30px;
+   background-image: url("../img/plus.svg");
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   opacity: 1;
 }
 
 .catalog-name:hover{
@@ -1187,6 +1193,7 @@ opacity: 0.3;
   top:-42px;
   left: 501px;
   margin-bottom:6px;
+  width: 520px;
 }
 
 .for-index{
@@ -1452,10 +1459,11 @@ padding:0;
 }
 
 /*Доставка, гарантия, кредит */
-.site-wrapper-2{
+.service-block{
   background-color: #e5e5e5;
   margin-bottom: 94px;
   padding-bottom: 70px;
+  width: 1439px;
 }
 
 .slider-2 {
@@ -1575,15 +1583,15 @@ padding:0;
   background-position: 0 0;
 }
 
-#product-4:checked ~ .site-wrapper-2 #slide4,
-#product-5:checked ~ .site-wrapper-2 #slide5,
-#product-6:checked ~ .site-wrapper-2 #slide6 {
+#product-4:checked ~ .service-block #slide4,
+#product-5:checked ~ .service-block #slide5,
+#product-6:checked ~ .service-block #slide6 {
   display: block;
 }
 
-#product-4:checked ~ .site-wrapper-2 label[for="product-4"],
-#product-5:checked ~ .site-wrapper-2 label[for="product-5"],
-#product-6:checked ~ .site-wrapper-2 label[for="product-6"] {
+#product-4:checked ~ .service-block label[for="product-4"],
+#product-5:checked ~ .service-block label[for="product-5"],
+#product-6:checked ~ .service-block label[for="product-6"] {
   color: #f7e184;
   background-color: #000;
   -webkit-transition: all .2s linear;
