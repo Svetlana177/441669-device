@@ -2,14 +2,14 @@
 @font-face {
   font-family: "Gilroyextrabold";
   font-weight: 800;
-  src: url('../fonts/gilroy/Gilroyextrabold.ttf'); /* Путь к файлу со шрифтом */
+  src: url("../fonts/gilroy/Gilroyextrabold.ttf"); /* Путь к файлу со шрифтом */
   }
 
 /* "Gilroylight - cyrillic_latin */
 @font-face {
   font-family: "Gilroylight";
   font-weight: 300;
-  src: url('../fonts/gilroy/Gilroylight.ttf'); /* Путь к файлу со шрифтом */
+  src: url("../fonts/gilroy/Gilroylight.ttf"); /* Путь к файлу со шрифтом */
   }
 
 body{
@@ -1519,7 +1519,7 @@ margin-left: 60px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 168px;
+  margin-bottom: 180px;
 }
 
 .catalog-item{
@@ -1533,6 +1533,11 @@ margin-left: 60px;
   order:2;
 }
 
+.catalog-category{
+  margin:0;
+  padding: 0;
+
+}
 .catalog-item-picture:active{
   opacity: 0.6;
 }
@@ -1668,6 +1673,7 @@ margin-left: 60px;
 
 .slider-item-service {
   display: none;
+  padding-right: 29px;
 }
 
 .description-background-04::after{
@@ -1678,15 +1684,15 @@ margin-left: 60px;
   background-image: url("../img/delivery.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  right: -232px;
+  right: -262px;
   bottom: -6px;
 }
 
 .description-background-05::after{
   content: "";
   position: absolute;
-  right: -253px;
-  bottom: -6px;
+  right: -282px;
+  bottom: -14px;
   width: 171px;
   height: 194px;
   background-image: url("../img/warranty.svg");
@@ -1697,7 +1703,7 @@ margin-left: 60px;
 .description-background-06::after{
   content: "";
   position: absolute;
-  right: -232px;
+  right: -254px;
   bottom: -6px;
   width: 156px;
   height: 186px;
@@ -2153,7 +2159,7 @@ top: 111px;
 
 .clearfix::after{
 	clear: both;
-	content: '';
+	content: "";
 	display: block;
 }
 
