@@ -5,10 +5,10 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header container ">
+    <header class="main-header container">
       <div class="container-min for-logo">
         <p>
           <a class="main-logo-top" aria-label="Device">
@@ -83,7 +83,7 @@
                 <h2>Делай селфи,<br>
                     как Бен Стиллер!
                 </h2>
-                <p class="description-common">Самая длинная палка селфи доступна в нашем магазине</p>
+                <p class="description-common">Самая длинная палка для селфи доступна в нашем магазине.</p>
                 <p class="description-common">Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <a href="catalog.html" class="features-details">Подробнее</a>
                 <table>
@@ -178,7 +178,7 @@
           <h2 class="visually-hidden">Каталог товаров</h2>
           <ul class="catalog-item-list">
             <li class="catalog-item">
-              <a class="catalog-category-order" href="catalog.html">
+              <a class="catalog-category-order catalog-category-common" href="catalog.html">
                 <p class="catalog-item-image">
                     <img class="catalog-item-picture catalog-picture-1" src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
                 </p>
@@ -187,7 +187,7 @@
               </a>
             </li>
             <li class="catalog-item">
-              <a href="catalog.html">
+              <a class="catalog-category-common" href="catalog.html">
                 <p class="catalog-item-image">
                  <img class="catalog-item-picture catalog-picture-2" src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
                 </p>
@@ -196,7 +196,7 @@
               </a>
             </li>
             <li class="catalog-item">
-              <a href="catalog.html">
+              <a class="catalog-category-common" href="catalog.html">
                 <p class="catalog-item-image">
                 <img class="catalog-item-picture catalog-picture-3" src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
                 </p>
@@ -204,7 +204,7 @@
               </a>
             </li>
             <li class="catalog-item">
-              <a href="catalog.html">
+              <a class="catalog-category-common" href="catalog.html">
                 <p class="catalog-item-image">
                   <img class="catalog-item-picture catalog-picture-4" src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
                 </p>
@@ -212,7 +212,7 @@
               </a>
             </li>
             <li class="catalog-item">
-              <a href="catalog.html">
+              <a class="catalog-category-common" href="catalog.html">
                 <p class="catalog-item-image">
                   <img class="catalog-item-picture catalog-picture-5" src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
                 </p>
@@ -220,7 +220,7 @@
               </a>
             </li>
             <li class="catalog-item">
-              <a href="catalog.html">
+              <a class="catalog-category-common" href="catalog.html">
                 <p class="catalog-item-image">
                   <img class="catalog-item-picture catalog-picture-6" src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
                 </p>
@@ -271,18 +271,10 @@
       <div class="container-min">
         <section class="partners">
           <h2 class="visually-hidden">Партнеры</h2>
-          <a href="#" aria-label="dji">
-            <div class="partner-1"></div>
-          </a>
-          <a href="#" aria-label="Sp-gadgets">
-            <div class="partner-2"></div>
-          </a>
-          <a href="#" aria-label="GoPro">
-            <div class="partner-3"></div>
-          </a>
-          <a href="#" aria-label="Vive">
-            <div class="partner-4"></div>
-          </a>
+          <a class="partners-general partner-1" href="#" aria-label="dji"></a>
+          <a class="partners-general partner-2" href="#" aria-label="Sp-gadgets"></a>
+          <a class="partners-general partner-3" href="#" aria-label="GoPro"></a>
+          <a class="partners-general partner-4" href="#" aria-label="Vive"></a>
         </section>
         <div class="about-us-contacts">
           <section class="about-us">
@@ -291,8 +283,8 @@
             <p class="about-us-description description about-us-2">Мы можем доставить ваш товар в самые отдаленные точки России! Device работает со многими транспортными компаниями:</p>
             <ul class="about-us-partner">
               <li><a href="">Деловые Линии</a></li>
-              <li><a href="">Автотрейдинг</a></li>
-              <li><a href="">ЖелДорЭкспедиция</a></li>
+              <li><a class="about-us-partner-car" href="">Автотрейдинг</a></li>
+              <li><a href="about-us-partner-road">ЖелДорЭкспедиция</a></li>
             </ul>
             <a href="about-us.html" class="features-details-us">Подробнее о нас</a>
           </section>
@@ -301,7 +293,7 @@
             <p class="description-common about-us-1">
               Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
             </p>
-            <a class="about-us-3 contacts-button-map" href="#">
+            <a class="contacts-button-map" href="https://www.google.com/maps">
                 <img class="contacts-map" src="img/map.png" width="560" height="222" alt="Офис компании по адресу: г. Москва, ул. Строителей, 15">
             </a>
             <a class="map" href="map.html" aria-label="Как нас найти"></a>
@@ -352,11 +344,11 @@
       </footer>
     </div>
     <section class="modal modal-map">
+      <a class="contacts-button-map" href="map.html" aria-label="Как до нас добраться"></a>
       <h2 class="visually-hidden">Как до нас добраться</h2>
-       <iframe src="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.687034,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618" width="960" height="559" allowfullscreen></iframe>
-      <p>
-        <img class="map-big" src="img/map-big.png" width="960" height="559" alt="Офис компании по адресу: г. Москва, ул. Строителей, 15">
-      </p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947333!2d37.52742931560502!3d55.687034004530396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sus!4v1537388549277" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <p><img class="map-big" src="img/map-big.png" width="960" height="559" alt="Офис компании по адресу: г. Москва, ул. Строителей, 15"></p>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="modal modal-write-us">
@@ -366,7 +358,7 @@
         <div class="name-email">
           <p class="modal-name">
             <label class="write-us-user-text" for="user-name">Ваше имя:</label>
-            <input type="text" class="write-us-form" id="user-name" name="name" value placeholder="Имя Фамилия" required>
+            <input type="text" class="write-us-form" id="user-name" name="userName" value placeholder="Имя Фамилия" required>
           </p>
           <p class="modal-name">
             <label class="write-us-user-text" for="user-e-mail">Ваш e-mail:</label>
@@ -379,90 +371,6 @@
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <script>
-      var link = document.querySelector(".login-link");
-
-      var popup = document.querySelector(".modal-login");
-      var close = popup.querySelector(".modal-close");
-
-      var form = popup.querySelector("form");
-      var login = popup.querySelector("[name=login]");
-      var password = popup.querySelector("[name=password]");
-
-      var isStorageSupport = true;
-      var storage = "";
-
-      try {
-      storage = localStorage.getItem("login");
-      } catch (err) {
-      isStorageSupport = false;
-      }
-
-      link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-
-      if (storage) {
-        login.value = storage;
-        password.focus();
-      } else {
-        login.focus();
-      }
-      });
-
-      close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error");
-      });
-
-      form.addEventListener("submit", function (evt) {
-      if (!login.value || !password.value) {
-        evt.preventDefault();
-        popup.classList.remove("modal-error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("modal-error");
-      } else {
-        if (isStorageSupport) {
-          localStorage.setItem("login", login.value);
-        }
-      }
-      });
-
-      window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (popup.classList.contains("modal-show")) {
-          popup.classList.remove("modal-show");
-          popup.classList.remove("modal-error");
-        }
-      }
-      });
-
-
-      var mapLink = document.querySelector(".contacts-button-map");
-
-      var mapPopup = document.querySelector(".modal-map");
-      var mapClose = mapPopup.querySelector(".modal-close");
-
-      mapLink.addEventListener("click", function (evt) {
-       evt.preventDefault();
-       mapPopup.classList.add("modal-show");
-      });
-
-      mapClose.addEventListener("click", function (evt) {
-       evt.preventDefault();
-       mapPopup.classList.remove("modal-show");
-      });
-
-      window.addEventListener("keydown", function (evt) {
-       evt.preventDefault();
-       if (evt.keyCode === 27) {
-         if (mapPopup.classList.contains("modal-show")) {
-           mapPopup.classList.remove("modal-show");
-         }
-       }
-      });
-    </script>
+    <script src="js/script-min.js"></script>
   </body>
 </html>
